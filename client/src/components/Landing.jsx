@@ -23,6 +23,20 @@ const Landing = () => {
       console.error('Error creating subscription', error);
     }
   };
+
+  const handleAnnualPayment=async()=>{
+    try {
+      const response = await axios.post('http://localhost:3000/create-subs', {
+        plan_name: 'annual', 
+        duration: 'year'   
+      });
+      console.log({data:response.data})
+      const session = response.data.session;
+      window.location.href = session.url; // Redirect to Stripe checkout
+    } catch (error) {
+      console.error('Error creating subscription', error);
+    }
+  }
   
   return (
     <motion.div
@@ -143,7 +157,7 @@ const Landing = () => {
                 <h3 className="text-2xl font-semibold mb-4">Annual</h3>
                 <p className="text-xl mb-6">Unlock full access for a whole year.</p>
                 <p className="text-4xl font-bold mb-4">$99</p>
-                <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-500 transition duration-300">
+                <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-500 transition duration-300" onClick={handleAnnualPayment}>
                   Choose Annual
                 </button>
               </motion.div>
