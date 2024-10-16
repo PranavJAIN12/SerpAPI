@@ -12,7 +12,7 @@ dist
 dist-ssr
 *.local
 
-# Secret
+# Ignore server .env file
 ../server/.env
 
 # Editor directories and files
