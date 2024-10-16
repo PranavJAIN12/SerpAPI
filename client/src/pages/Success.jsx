@@ -44,7 +44,7 @@ const Success = () => {
         <p className="text-xl mb-6">
           Thank you for your payment. You have successfully subscribed to the plan.
         </p>
-        <Link to="/">
+        <Link to="/home">
           <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-500 transition duration-300">
             Go to Home
           </button>

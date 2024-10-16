@@ -127,7 +127,7 @@ const Landing = () => {
                 <h3 className="text-2xl font-semibold mb-4">Free</h3>
                 <p className="text-xl mb-6">Get started for free with limited features.</p>
                 <p className="text-4xl font-bold mb-4">$0</p>
-                <Link to="/">
+                <Link to="/home">
                   <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-500 transition duration-300">
                     Choose Free
                   </button>

@@ -20,12 +20,12 @@ const Fail = () => {
         <p className="text-xl mb-6">
           Unfortunately, your payment could not be processed. Please try again later or use a different payment method.
         </p>
-        <Link to="/landing">
+        <Link to="/">
           <button className="bg-red-600 text-white py-2 px-6 rounded-full hover:bg-red-500 transition duration-300">
             Try Again
           </button>
         </Link>
-        <Link to="/landing">
+        <Link to="/">
           <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-500 transition duration-300 ml-4">
             Go to Home
           </button>
