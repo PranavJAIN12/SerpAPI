@@ -1,0 +1,1152 @@
+{
+    "data": {
+        "search_metadata": {
+            "id": "66ffd235d403e195cc1950d5",
+            "status": "Success",
+            "json_endpoint": "https://serpapi.com/searches/b4b086bd69063213/66ffd235d403e195cc1950d5.json",
+            "created_at": "2024-10-04 11:32:05 UTC",
+            "processed_at": "2024-10-04 11:32:05 UTC",
+            "google_url": "https://www.google.com/search?q=coffee&oq=coffee&sourceid=chrome&ie=UTF-8",
+            "raw_html_file": "https://serpapi.com/searches/b4b086bd69063213/66ffd235d403e195cc1950d5.html",
+            "total_time_taken": 1.64
+        },
+        "search_parameters": {
+            "engine": "google",
+            "q": "coffee",
+            "google_domain": "google.com",
+            "device": "desktop"
+        },
+        "search_information": {
+            "query_displayed": "coffee",
+            "total_results": 3730000000,
+            "time_taken_displayed": 0.35,
+            "organic_results_state": "Results for exact spelling"
+        },
+        "recipes_results": [
+            {
+                "title": "Coffee recipes",
+                "link": "https://www.bbcgoodfood.com/recipes/collection/coffee-recipes",
+                "source": "BBC Good Food",
+                "ingredients": [
+                    "Instant coffee"
+                ],
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSstZjPWNJe6Cl16FCp4xURsTjFeH_G5U_KAG01zCdDH3ebjuqNySel0eVq6w&s"
+            },
+            {
+                "title": "Coffee Shake",
+                "link": "https://www.allrecipes.com/recipe/62558/coffee-shake/",
+                "source": "Allrecipes",
+                "rating": 4.6,
+                "reviews": 148,
+                "total_time": "5 min",
+                "ingredients": [
+                    "Chocolate syrup",
+                    "instant coffee",
+                    "white sugar",
+                    "ice cubes",
+                    "vanilla extract"
+                ],
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRiFDnBvyQ0xTWfsDESLJcaugQ1ygN6r2Zf-i6wFCScqc2CkWitrxk1iy4X&s"
+            },
+            {
+                "title": "Coffee Cola",
+                "link": "https://pullandpourcoffee.com/coffee-cola-recipe/",
+                "source": "Pull & Pour Coffee",
+                "total_time": "3 min",
+                "ingredients": [
+                    "Sweetened condensed milk",
+                    "espresso"
+                ],
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQw1fTF-NoYZq-ZhMwNXxLBlU1E4lI0GmU5KMbsew10yG_heb9b1uPNe8l&s"
+            }
+        ],
+        "local_map": {
+            "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=coffee&npsic=0&rflfq=1&rldoc=1&rllag=33527404,-96584547,20454&tbm=lcl&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQtgN6BAg8EAI",
+            "image": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/138160cf56e903e0526b91de747b7147.png",
+            "gps_coordinates": {
+                "latitude": 33.527404,
+                "longitude": -96.584547
+            }
+        },
+        "local_results": {
+            "places": [
+                {
+                    "position": 1,
+                    "rating": 4.7,
+                    "reviews_original": "(737)",
+                    "reviews": 737,
+                    "description": "Dine-in·Drive-through·Delivery",
+                    "lsig": "AB86z5UhOAPdD4-jAkaDnBr5smt7",
+                    "thumbnail": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/f843ddced0d0e6cb6390cab82d6108eb7bf1f0c6177e99d35f8c4af75440c9817a3da0f1f5e7f992.jpeg",
+                    "service_options": {
+                        "dine_in": true,
+                        "drive_through": true,
+                        "delivery": true
+                    },
+                    "title": "CJ's Coffee Cafe",
+                    "type": "Coffee shop",
+                    "address": "Sherman, TX",
+                    "place_id": "13023443599743364283",
+                    "place_id_search": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&ludocid=13023443599743364283&q=coffee",
+                    "gps_coordinates": {
+                        "latitude": 33.643604,
+                        "longitude": -96.61176
+                    }
+                },
+                {
+                    "position": 2,
+                    "rating": 4.8,
+                    "reviews_original": "(16)",
+                    "reviews": 16,
+                    "description": "Dine-in·Curbside pickup·Delivery",
+                    "lsig": "AB86z5WKsR-WPcn-k-2d8ld3IMEM",
+                    "thumbnail": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/f843ddced0d0e6cb6390cab82d6108eb9abd2d91a1428592ef4c4094e354286bab2242420823eb22.jpeg",
+                    "service_options": {
+                        "dine_in": true,
+                        "curbside_pickup": true,
+                        "delivery": true
+                    },
+                    "title": "Revolution Coffee Co.",
+                    "type": "Coffee shop",
+                    "address": "Denison, TX",
+                    "place_id": "12821559447061790430",
+                    "place_id_search": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&ludocid=12821559447061790430&q=coffee",
+                    "gps_coordinates": {
+                        "latitude": 33.709953,
+                        "longitude": -96.58485
+                    }
+                },
+                {
+                    "position": 3,
+                    "rating": 4.9,
+                    "reviews_original": "(91)",
+                    "reviews": 91,
+                    "description": "Dine-in·Takeout·No delivery",
+                    "lsig": "AB86z5VJwuYBiKbZi64fWG_Pobai",
+                    "thumbnail": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/f843ddced0d0e6cb6390cab82d6108eb775bf8fe2a2c78fa7c80c1a39602998d54001e0c32fa04ba.jpeg",
+                    "service_options": {
+                        "dine_in": true,
+                        "takeout": true,
+                        "no_delivery": true
+                    },
+                    "title": "Country Charm Coffee",
+                    "type": "Coffee shop",
+                    "address": "Anna, TX",
+                    "place_id": "5377825723699965978",
+                    "place_id_search": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&ludocid=5377825723699965978&q=coffee",
+                    "gps_coordinates": {
+                        "latitude": 33.344856,
+                        "longitude": -96.55732
+                    }
+                }
+            ],
+            "more_locations_link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&tbs=lf:1,lf_ui:9&tbm=lcl&q=coffee&rflfq=1&num=10&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQjGp6BAg9EAE"
+        },
+        "knowledge_graph": {
+            "title": "Coffee",
+            "type": "Beverages",
+            "entity_type": "food, kp3_verticals",
+            "kgmid": "/m/02vqfm",
+            "knowledge_graph_search_link": "https://www.google.com/search?kgmid=/m/02vqfm&hl=en-US&q=Coffee",
+            "serpapi_knowledge_graph_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&hl=en-US&kgmid=%2Fm%2F02vqfm&q=Coffee",
+            "header_images": [
+                {
+                    "image": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/b1593540b92edf8c90d7566a3085490e7e0ad6817778de663925213517469ee7bcd12da2e333bd9b.jpeg",
+                    "source": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcS5iKBhe62Mbj3CavwfKcI3qEhN2U8KryfZnGyQXjb-h8A9ctiF-dDtHlDLptk-mK2s"
+                },
+                {
+                    "image": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/b1593540b92edf8c90d7566a3085490e7e0ad6817778de668a48924d22f7cc5a457d4d6ff79e1e41.jpeg",
+                    "source": "https://en.wikipedia.org/wiki/Coffee"
+                },
+                {
+                    "image": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/b1593540b92edf8c90d7566a3085490e7e0ad6817778de66a0e717e01ac550ad36c29f3fb90f9b01.jpeg",
+                    "source": "https://www.royalcupcoffee.com/blog/articles/selecting-right-coffee-every-time-day"
+                },
+                {
+                    "image": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/b1593540b92edf8c90d7566a3085490e7e0ad6817778de66ddff79df4f72d83e9d94fb712e0f80ea.jpeg",
+                    "source": "https://www.oregondairy.com/product/hot-coffee"
+                },
+                {
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkpRcsTgojpM9Hcf5X32_kyyLum47VfzCUdA8Dzq8mA&s",
+                    "source": "https://en.wikipedia.org/wiki/Coffee_bean"
+                }
+            ],
+            "description": "Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due to its caffeine content. It has the highest sales in the world market for hot drinks.",
+            "source": {
+                "name": "Wikipedia",
+                "link": "https://en.wikipedia.org/wiki/Coffee"
+            },
+            "acidity_level": "4.8 and 6.0 creaturecoffee.co",
+            "sources_include": "USDAUSDAUSDAUSDAUSDAUSDAUSDACoffee1 Calories - 1 cup (8 fl oz) (237 g)",
+            "people_also_search_for": [
+                {
+                    "name": "Tea",
+                    "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&si=ACC90nyvvWro6QmnyY1IfSdgk5wwjB1r8BGd_IWRjXqmKPQqm2VgjArAxxvSAJ_S7SFmrAEQJU4eWY_hYQwnunXX7rQFFh-dGYy-PZJ4ZMuIeGTXzUgScn9NIyGafOPq5ftsHdiB5uigc-S9MteXqEjugGKphlz3QXb-_tJXsNGR3zegtvCkZHDAzloeVI5C5R6V6DnzezPOwPLjrADI0iZLg2iL-Z0WW1yMsWjrq54PpGJeovb9qLOyr1a7l2muZ6dTRF6ArDke2sQWm0zA9snuHTl2e8GpMg%3D%3D&q=Tea&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQs9oBKAB6BAgsEAU",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Tea&si=ACC90nyvvWro6QmnyY1IfSdgk5wwjB1r8BGd_IWRjXqmKPQqm2VgjArAxxvSAJ_S7SFmrAEQJU4eWY_hYQwnunXX7rQFFh-dGYy-PZJ4ZMuIeGTXzUgScn9NIyGafOPq5ftsHdiB5uigc-S9MteXqEjugGKphlz3QXb-_tJXsNGR3zegtvCkZHDAzloeVI5C5R6V6DnzezPOwPLjrADI0iZLg2iL-Z0WW1yMsWjrq54PpGJeovb9qLOyr1a7l2muZ6dTRF6ArDke2sQWm0zA9snuHTl2e8GpMg%3D%3D",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDx79G849WuYBFo2YprEb9gkuWaeevsj4dN4Pb&s=0"
+                },
+                {
+                    "name": "Espresso",
+                    "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&si=ACC90nyvvWro6QmnyY1IfSdgk5wwjB1r8BGd_IWRjXqmKPQqm0OBdatvW-a2I_fj-h_OaBEHsUHJhW4ah8NZkZpk09mCOQbPRUUm4GhTzhT7V0-hnsQiZUmCCQrmeyuX1WhsLrOcUX04c1cXCB7DacjPn04Sbx35thWHD-P3KXet9cEjr4clX4qAENkaRHHL9hpfixzylUH0lGwVulD8mcQek22PL8V4nQA13ziVoGCkxC0i6GgzVYSSDkhaY8d735NiiacSp6fnJ4Iw9bm9YrUpuO5iGVCYDSvG0xlDKVH_8HrvDgy8fxg%3D&q=Espresso&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQs9oBKAB6BAgsEAk",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Espresso&si=ACC90nyvvWro6QmnyY1IfSdgk5wwjB1r8BGd_IWRjXqmKPQqm0OBdatvW-a2I_fj-h_OaBEHsUHJhW4ah8NZkZpk09mCOQbPRUUm4GhTzhT7V0-hnsQiZUmCCQrmeyuX1WhsLrOcUX04c1cXCB7DacjPn04Sbx35thWHD-P3KXet9cEjr4clX4qAENkaRHHL9hpfixzylUH0lGwVulD8mcQek22PL8V4nQA13ziVoGCkxC0i6GgzVYSSDkhaY8d735NiiacSp6fnJ4Iw9bm9YrUpuO5iGVCYDSvG0xlDKVH_8HrvDgy8fxg%3D",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTu__iipA5tpMNIWgpNr4YdlCnH-qRSKDoMyKk5&s=0"
+                },
+                {
+                    "name": "Iced coffee",
+                    "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&si=ACC90nzx_D3_zUKRnpAjmO0UBLNxnt7EyN4YYdru6U3bxLI-LwZxMRZGkitlNjNo6SNQSysgb0HH6qRTwo6GkSeWlsG5TW-c-HBY7hddIf_qVgjOk1NnzG53mlAY0E3LLA6keAcdDAcRYFbn-PH5K1RRW2keTRLGAuJlHEFARNi7qwiTvM4dFBU6sUhWyoBD5K7t8ePQqhx3fwcovOhqu4WRehab0CdTdN86liTSWeV74YUC--iBCazdMRN9pWnuSm-2lzeHU53bDkgjxFdgC6kWtShGdcOEYImvdUYxvdITMmhBF_823wU%3D&q=Iced+coffee&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQs9oBKAB6BAgsEA0",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Iced+coffee&si=ACC90nzx_D3_zUKRnpAjmO0UBLNxnt7EyN4YYdru6U3bxLI-LwZxMRZGkitlNjNo6SNQSysgb0HH6qRTwo6GkSeWlsG5TW-c-HBY7hddIf_qVgjOk1NnzG53mlAY0E3LLA6keAcdDAcRYFbn-PH5K1RRW2keTRLGAuJlHEFARNi7qwiTvM4dFBU6sUhWyoBD5K7t8ePQqhx3fwcovOhqu4WRehab0CdTdN86liTSWeV74YUC--iBCazdMRN9pWnuSm-2lzeHU53bDkgjxFdgC6kWtShGdcOEYImvdUYxvdITMmhBF_823wU%3D",
+                    "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTMkMPpPDXNEp6kFtfCTpmwzzfHc1aInX-G5odZ&s=0"
+                },
+                {
+                    "name": "Cappuccino",
+                    "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&si=ACC90nyvvWro6QmnyY1IfSdgk5wwjB1r8BGd_IWRjXqmKPQqm6hqn45R6HDq_bRft1V3sEs5SFg7AnMgKGqcMKb-88Djo-obJzbDghWY78qsFURPwD-rPrzltETeXYFtPBWzln7WQkz-aMy9I2MFJIiE9yMN_GVsBVIhqDJaf6XSzRtBQw4GX6P0zMisXr_MzriQ3IHBJdRmoPQ335In3HpuNWfkUtpNWWsjYL0Hx4Hbod9rNCRj5bwqIb3fm83ifBYzDZ1dAxNlJmPFSUQUXk_MhJZTKg13by5Eu-1-kpp2cgB87sz50Zo%3D&q=Cappuccino&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQs9oBKAB6BAgsEBE",
+                    "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Cappuccino&si=ACC90nyvvWro6QmnyY1IfSdgk5wwjB1r8BGd_IWRjXqmKPQqm6hqn45R6HDq_bRft1V3sEs5SFg7AnMgKGqcMKb-88Djo-obJzbDghWY78qsFURPwD-rPrzltETeXYFtPBWzln7WQkz-aMy9I2MFJIiE9yMN_GVsBVIhqDJaf6XSzRtBQw4GX6P0zMisXr_MzriQ3IHBJdRmoPQ335In3HpuNWfkUtpNWWsjYL0Hx4Hbod9rNCRj5bwqIb3fm83ifBYzDZ1dAxNlJmPFSUQUXk_MhJZTKg13by5Eu-1-kpp2cgB87sz50Zo%3D",
+                    "image": "https://encrypted-tbn0.gstatic.com/licensed-image?q=tbn:ANd9GcQBbV8Xq7E5VyM7Tx4jGzATPZN6wJXfx3p6JFeXSbMoGP_mL_a6SBE4o1c&s=19"
+                }
+            ],
+            "list": {
+                "total_fat": [
+                    "0 g",
+                    "0%"
+                ],
+                "cholesterol": [
+                    "0 mg",
+                    "0%"
+                ],
+                "sodium": [
+                    "5 mg",
+                    "0%"
+                ],
+                "potassium": [
+                    "116 mg",
+                    "3%"
+                ],
+                "total_carbohydrate": [
+                    "0 g",
+                    "0%"
+                ],
+                "protein": [
+                    "0.3 g",
+                    "0%"
+                ],
+                "caffeine": [
+                    "95 mg"
+                ]
+            }
+        },
+        "inline_images": [
+            {
+                "link": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&udm=2&source=iu&ictx=1&vet=1&fir=fB0hzBdLu87wVM%252CCfYNV3yFNKBNhM%252C%252Fm%252F02vqfm%253BoBlbAErPFaelcM%252CU6oJMnF-eeVTAM%252C_%253BllN6NXUVBY2d_M%252CwlMSbsx4H7MC9M%252C_%253BDAsLCIQHUIvSjM%252C2Gk4TL4Q7s6x-M%252C_%253BfkVN4OOwbvG_5M%252CMKf2RNV50tnAQM%252C_&usg=AI4_-kTKlP3_J2tAj59sTFCXIWuRpJAU4Q&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ_B16BAgvEAE#vhid=fB0hzBdLu87wVM&vssid=mosaic",
+                "source": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcS5iKBhe62Mbj3CavwfKcI3qEhN2U8KryfZnGyQXjb-h8A9ctiF-dDtHlDLptk-mK2s",
+                "thumbnail": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/4a484e0c803d1c59875180dae5ef60b24918db215ff66852ab4c6942fd2bb0ce.jpeg",
+                "original": "http://t0.gstatic.com/licensed-image?q=tbn:ANd9GcS5iKBhe62Mbj3CavwfKcI3qEhN2U8KryfZnGyQXjb-h8A9ctiF-dDtHlDLptk-mK2s",
+                "source_name": "t0.gstatic.com"
+            },
+            {
+                "link": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&udm=2&source=iu&ictx=1&vet=1&fir=oBlbAErPFaelcM%252CU6oJMnF-eeVTAM%252C_%253BllN6NXUVBY2d_M%252CwlMSbsx4H7MC9M%252C_%253BDAsLCIQHUIvSjM%252C2Gk4TL4Q7s6x-M%252C_%253BfkVN4OOwbvG_5M%252CMKf2RNV50tnAQM%252C_&usg=AI4_-kR1cQCsMBvcjOgIAJCNkFGeq76MMQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ_h16BAgzEAE#vhid=oBlbAErPFaelcM&vssid=mosaic",
+                "source": "https://en.wikipedia.org/wiki/Coffee",
+                "thumbnail": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/4a484e0c803d1c59e45eb7129430af1673fa06fa081e490e530a433ad6db383a.jpeg",
+                "original": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Latte_and_dark_coffee.jpg/1200px-Latte_and_dark_coffee.jpg",
+                "title": "Coffee - Wikipedia",
+                "source_name": "Wikipedia"
+            },
+            {
+                "link": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&udm=2&source=iu&ictx=1&vet=1&fir=oBlbAErPFaelcM%252CU6oJMnF-eeVTAM%252C_%253BllN6NXUVBY2d_M%252CwlMSbsx4H7MC9M%252C_%253BDAsLCIQHUIvSjM%252C2Gk4TL4Q7s6x-M%252C_%253BfkVN4OOwbvG_5M%252CMKf2RNV50tnAQM%252C_&usg=AI4_-kR1cQCsMBvcjOgIAJCNkFGeq76MMQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ_h16BAgxEAE#vhid=llN6NXUVBY2d_M&vssid=mosaic",
+                "source": "https://www.royalcupcoffee.com/blog/articles/selecting-right-coffee-every-time-day",
+                "thumbnail": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/4a484e0c803d1c599fad8ebd75b8485f1b618e8909e4859275a77c4dfc260b95.jpeg",
+                "original": "https://www.royalcupcoffee.com/sites/default/files/images/blog/AdobeStock_159183621update.jpg",
+                "title": "Selecting the Right Coffee for Every Time if Day | Royal Cup ...",
+                "source_name": "Royal Cup Coffee"
+            },
+            {
+                "link": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&udm=2&source=iu&ictx=1&vet=1&fir=oBlbAErPFaelcM%252CU6oJMnF-eeVTAM%252C_%253BllN6NXUVBY2d_M%252CwlMSbsx4H7MC9M%252C_%253BDAsLCIQHUIvSjM%252C2Gk4TL4Q7s6x-M%252C_%253BfkVN4OOwbvG_5M%252CMKf2RNV50tnAQM%252C_&usg=AI4_-kR1cQCsMBvcjOgIAJCNkFGeq76MMQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ_h16BAgyEAE#vhid=DAsLCIQHUIvSjM&vssid=mosaic",
+                "source": "https://www.oregondairy.com/product/hot-coffee",
+                "thumbnail": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/4a484e0c803d1c596f009091a6ae5ad81b52bb40f09c958dc81edead4a2846c3.jpeg",
+                "original": "https://www.oregondairy.com/wp-content/uploads/2016/05/coffee-1.jpg",
+                "title": "Hot Coffee",
+                "source_name": "Oregon Dairy"
+            },
+            {
+                "link": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&udm=2&source=iu&ictx=1&vet=1&fir=oBlbAErPFaelcM%252CU6oJMnF-eeVTAM%252C_%253BllN6NXUVBY2d_M%252CwlMSbsx4H7MC9M%252C_%253BDAsLCIQHUIvSjM%252C2Gk4TL4Q7s6x-M%252C_%253BfkVN4OOwbvG_5M%252CMKf2RNV50tnAQM%252C_&usg=AI4_-kR1cQCsMBvcjOgIAJCNkFGeq76MMQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ_h16BAgwEAE#vhid=fkVN4OOwbvG_5M&vssid=mosaic",
+                "source": "https://en.wikipedia.org/wiki/Coffee_bean",
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdkpRcsTgojpM9Hcf5X32_kyyLum47VfzCUdA8Dzq8mA&s",
+                "original": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c5/Roasted_coffee_beans.jpg/1200px-Roasted_coffee_beans.jpg",
+                "title": "Coffee bean - Wikipedia",
+                "source_name": "Wikipedia"
+            }
+        ],
+        "inline_videos": [
+            {
+                "position": 1,
+                "title": "I have been a coffee geek for 16 years. Here's my best advice.",
+                "link": "https://www.youtube.com/watch?v=e747SIBmWPE",
+                "thumbnail": "https://i.ytimg.com/vi/e747SIBmWPE/mqdefault.jpg?sqp=-oaymwEFCJQBEFM&rs=AMzJL3lov-aVyHMSnF8kNeWtFYv19aZtbA",
+                "channel": "The Coffee Chronicler",
+                "duration": "11:47",
+                "platform": "YouTube",
+                "date": "1 month ago",
+                "key_moments": [
+                    {
+                        "time": "00:00",
+                        "title": "Mindset",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=0",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSKBhatF_lT__NJ_x1LRa4K8sKCG_ipqcpHct6DLAz7Tw&s"
+                    },
+                    {
+                        "time": "01:08",
+                        "title": "Kopi Luwak",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=68",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTxJCMVfhKZGzLMxQUoGjs384B9Eun9MdXzm7QITq-7jg&s"
+                    },
+                    {
+                        "time": "02:02",
+                        "title": "Terroir?",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=122",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQQJjtJhtHMlThqIs6XILFD7Mwa7GkEnNbesPnCTm8PQ&s"
+                    },
+                    {
+                        "time": "03:09",
+                        "title": "Gear – buy this!",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=189",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUeQlQ-LoYZ5KUbJTieu9ENi32y8x36TaxJngULlzIKw&s"
+                    },
+                    {
+                        "time": "05:17",
+                        "title": "Water for coffee foundations",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=317",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRIClqvTFA4lnguvwZ733fUUd4Qp3TUix9jJCmwk2kotw&s"
+                    },
+                    {
+                        "time": "06:25",
+                        "title": "Espresso & accessories",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=385",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSysa9tCIU5wpb9RC0L7s3X7M5YFwttcOix-g1dtYvmxQ&s"
+                    },
+                    {
+                        "time": "07:58",
+                        "title": "Coffee Freshness & storage",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=478",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSb3QqZ6k3tiRDh270u3B9vs32nleO4BHku3JU5bQMSoQ&s"
+                    },
+                    {
+                        "time": "09:04",
+                        "title": "Processing",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=544",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR8IAE7QrqScqPZvJSenYbbUdEzl6Z49JyqjVpUqQFbLw&s"
+                    },
+                    {
+                        "time": "10:27",
+                        "title": "Coffee roasting",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=627",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQaHtN5r-0XnrMSokRW7juTOpHHCpl7RjkpVBLiO888RQ&s"
+                    },
+                    {
+                        "time": "11:10",
+                        "title": "Balance",
+                        "link": "https://www.youtube.com/watch?v=e747SIBmWPE&t=670",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgmY1I5cfsRML1wYgtn-eKeMU5h163H7pc2CdVhCfKag&s"
+                    }
+                ]
+            },
+            {
+                "position": 2,
+                "title": "Sour coffee? THIS changes everything",
+                "link": "https://www.youtube.com/watch?v=9PERzQBqFVI",
+                "thumbnail": "https://i.ytimg.com/vi/9PERzQBqFVI/mqdefault.jpg?sqp=-oaymwEFCJQBEFM&rs=AMzJL3l6DN0JVuD1i8-Zo_fYogZE9qMqYg",
+                "channel": "The Coffee Chronicler",
+                "duration": "9:59",
+                "platform": "YouTube",
+                "date": "18 hours ago"
+            },
+            {
+                "position": 3,
+                "title": "How I ACTUALLY Make Coffee At Home",
+                "link": "https://www.youtube.com/watch?v=oiHdMqQ9UV0",
+                "thumbnail": "https://i.ytimg.com/vi/oiHdMqQ9UV0/mqdefault.jpg?sqp=-oaymwEFCJQBEFM&rs=AMzJL3nfgHADxZE3DAc-yrQwKHw92Ncp0g",
+                "channel": "Morgan Eckroth",
+                "duration": "18:39",
+                "platform": "YouTube",
+                "date": "Jul 19, 2024",
+                "key_moments": [
+                    {
+                        "time": "00:00",
+                        "title": "Hello There",
+                        "link": "https://www.youtube.com/watch?v=oiHdMqQ9UV0&t=0",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9bVZD5eUX5DC817yi4pfx2hr5cy1_7beQcB1qdEpgLw&s"
+                    },
+                    {
+                        "time": "00:52",
+                        "title": "Pourover Setup",
+                        "link": "https://www.youtube.com/watch?v=oiHdMqQ9UV0&t=52",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSEp4K_KePnURON6XiHZC_1c5SEjhI6v7H6edXgI_jHhA&s"
+                    },
+                    {
+                        "time": "06:32",
+                        "title": "Pourover Recipe",
+                        "link": "https://www.youtube.com/watch?v=oiHdMqQ9UV0&t=392",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRt0QVVcMHnqsA9_5Br5hxfk2fjCZULltwodaz13U2VLg&s"
+                    },
+                    {
+                        "time": "09:37",
+                        "title": "Espresso Station",
+                        "link": "https://www.youtube.com/watch?v=oiHdMqQ9UV0&t=577",
+                        "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSF3RmpxBApolB4gI4S4IpwReqVzsxbDNCChiA4n72Jw&s"
+                    }
+                ]
+            }
+        ],
+        "immersive_products": [
+            {
+                "category": "Popular products",
+                "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcRqdaF_3gjxWxLvjXRusR_WX0Hj8CAusOE4n-a5wrAmQEDdvj1U_pW3kjBR4RwwYHh3OW2-zm4",
+                "source_logo": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+                "source": "Walmart",
+                "title": "Folgers Classic Roast Ground Coffee",
+                "rating": 4.6,
+                "reviews": 14000,
+                "price": "$5.42",
+                "extracted_price": 5.42,
+                "immersive_product_page_token": "eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY5MTQ4Nzc2MjUyODA5Nzc4NjUiLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjMyMzgyMjQ4NDQ2MjQ5MTIxNjkiLCJpbWFnZURvY2lkIjoiNDc2NzQ5OTE1OTA2MzI3OTE0IiwicmRzIjoiUENfMzI0NTQ3NjQwMDgzMzU1MTk0OHxQUk9EX1BDXzMyNDU0NzY0MDA4MzM1NTE5NDgiLCJxdWVyeSI6ImNvZmZlZSJ9",
+                "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTY5MTQ4Nzc2MjUyODA5Nzc4NjUiLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjMyMzgyMjQ4NDQ2MjQ5MTIxNjkiLCJpbWFnZURvY2lkIjoiNDc2NzQ5OTE1OTA2MzI3OTE0IiwicmRzIjoiUENfMzI0NTQ3NjQwMDgzMzU1MTk0OHxQUk9EX1BDXzMyNDU0NzY0MDA4MzM1NTE5NDgiLCJxdWVyeSI6ImNvZmZlZSJ9"
+            },
+            {
+                "category": "Popular products",
+                "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSiYjiDz7YoPMm7Vzxa6BePq9zdmsLTVh43cc1rktuqimVmmUY",
+                "source_logo": "https://encrypted-tbn1.gstatic.com/favicon-tbn?q=tbn%3AANd9GcQpgfL0avcSnIIA7Wnlomi5kymZiO0A2kINnMkGZ3G1FlJRmOOARrbdPOOdSZARVbApsdeCP7QiIe5WxnPSOaIbtM4r",
+                "source": "Amazon",
+                "title": "Organic Ryze Mushroom Coffee",
+                "rating": 4.8,
+                "reviews": 141000,
+                "price": "$28.00",
+                "extracted_price": 28,
+                "immersive_product_page_token": "eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTIzNjI1MDU2ODk4NDU0MzAwMDIiLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjcwODk0MDUxNDU1NzQ4OTA4MTMiLCJpbWFnZURvY2lkIjoiMTM4MDIyMTQ2NTkxOTUwNjk5MzQiLCJyZHMiOiJQQ18xNDU4MTE5MzQ0MTY1OTM3NTQ0M3xQUk9EX1BDXzE0NTgxMTkzNDQxNjU5Mzc1NDQzIiwicXVlcnkiOiJjb2ZmZWUifQ==",
+                "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTIzNjI1MDU2ODk4NDU0MzAwMDIiLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjcwODk0MDUxNDU1NzQ4OTA4MTMiLCJpbWFnZURvY2lkIjoiMTM4MDIyMTQ2NTkxOTUwNjk5MzQiLCJyZHMiOiJQQ18xNDU4MTE5MzQ0MTY1OTM3NTQ0M3xQUk9EX1BDXzE0NTgxMTkzNDQxNjU5Mzc1NDQzIiwicXVlcnkiOiJjb2ZmZWUifQ%3D%3D"
+            },
+            {
+                "category": "Popular products",
+                "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSBk7qFFc5eXLtMKqmJFxfu27DizwH-1W7zJeatTZ_suZsuCKtHhEMQM49dyNE18jlZs7JUbg9n",
+                "source_logo": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcSP-3CAlIHM4vrNOnJx5Jd7oBV13KVkk1fiPTxyM09zvi5dG3Cb77DP5Yk91NGg0tnVV2YHLB83fSvddh4G2eFtTFdFtAhWT5aKHscH",
+                "source": "Bones Coffee Company",
+                "title": "Ground Bones Coffee 5 Bag Sample Pack",
+                "rating": 4.8,
+                "reviews": 11000,
+                "price": "$33.00",
+                "extracted_price": 33,
+                "delivery": "Free $75+",
+                "immersive_product_page_token": "eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTcxMTkyMzUwNjc4NzIyNDgwODAiLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjgzNzczNjM4MDg5ODgyMjg0OTIiLCJpbWFnZURvY2lkIjoiNjM0OTk5OTM3ODA1MjkzOTY3MyIsInJkcyI6IlBDXzE0NjE1ODQ1OTU5MTc4NTY1OTAxfFBST0RfUENfMTQ2MTU4NDU5NTkxNzg1NjU5MDEiLCJxdWVyeSI6ImNvZmZlZSJ9",
+                "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTcxMTkyMzUwNjc4NzIyNDgwODAiLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjgzNzczNjM4MDg5ODgyMjg0OTIiLCJpbWFnZURvY2lkIjoiNjM0OTk5OTM3ODA1MjkzOTY3MyIsInJkcyI6IlBDXzE0NjE1ODQ1OTU5MTc4NTY1OTAxfFBST0RfUENfMTQ2MTU4NDU5NTkxNzg1NjU5MDEiLCJxdWVyeSI6ImNvZmZlZSJ9"
+            },
+            {
+                "category": "Popular products",
+                "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSX3zbPXMDlzoOCmDweL51UiV8xnxVgYn-tSPn-4jhq3Frg70F4gcExZ_oLPsVu_IHRk84L3OI",
+                "source_logo": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcT3xpS8aLa1ivOxeHyWvRGBXbhgo_A5FgGRlBTVarzT7wjaQU_uH6wFDHNaQ3bsWbOini649L-mTNBU-SjN276G42MOU6acT2n-4qriYIeq5Q",
+                "source": "Death Wish Coffee Company",
+                "title": "Death Wish Coffee Dark Roast",
+                "rating": 4.8,
+                "reviews": 7100,
+                "price": "$19.99",
+                "extracted_price": 19.99,
+                "delivery": "Free $50+",
+                "immersive_product_page_token": "eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiOTg0Mzk0NjI0ODMyNTY1NjM0IiwidmMiOiIiLCJ2c2MiOiIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNjY0MDcyMDMxNDU3ODY2MjE1NCIsImltYWdlRG9jaWQiOiIxNzk4MTkyOTI0Nzk1MjY4MTc1OCIsInJkcyI6IlBDXzE2MTAxNTUwMjUxOTE0OTY1MTkzfFBST0RfUENfMTYxMDE1NTAyNTE5MTQ5NjUxOTMiLCJxdWVyeSI6ImNvZmZlZSJ9",
+                "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiOTg0Mzk0NjI0ODMyNTY1NjM0IiwidmMiOiIiLCJ2c2MiOiIiLCJoZWFkbGluZU9mZmVyRG9jaWQiOiIxNjY0MDcyMDMxNDU3ODY2MjE1NCIsImltYWdlRG9jaWQiOiIxNzk4MTkyOTI0Nzk1MjY4MTc1OCIsInJkcyI6IlBDXzE2MTAxNTUwMjUxOTE0OTY1MTkzfFBST0RfUENfMTYxMDE1NTAyNTE5MTQ5NjUxOTMiLCJxdWVyeSI6ImNvZmZlZSJ9"
+            },
+            {
+                "category": "Popular products",
+                "thumbnail": "https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcQ2zdZYbsOt3m18jKyKrF5rYMy6F2JE37rqt44dmArG_lTTRFVaIkfmyBoiY1EAHg7N8upJKRTH",
+                "source_logo": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcQwNQuzSmDF8_rZu40RJ6kU6_tfvoEpQTNECF7aBM-ELm7BFVtUG0h0o0dHo34Vh8PfFRur4VqTIblTRXaYqBbgeOybVA",
+                "source": "CVS Pharmacy",
+                "title": "Starbucks Coffee Pike Place Roast",
+                "rating": 4.6,
+                "reviews": 8700,
+                "price": "$7.99",
+                "extracted_price": 7.99,
+                "original_price": "$13",
+                "extracted_original_price": 13,
+                "delivery": "Free $35+",
+                "extensions": [
+                    "40% OFF"
+                ],
+                "immersive_product_page_token": "eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTQ5MzY2MTExMTY2NzQxNDU5MTciLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjcwMzIwMjI5NTYxNjEzNzMzMjMiLCJpbWFnZURvY2lkIjoiMTE5OTM5MTg0NzQxNzIxNzM0MyIsInJkcyI6IlBDXzg3OTcyMTY0MjU3MjU4NjE5Mzd8UFJPRF9QQ184Nzk3MjE2NDI1NzI1ODYxOTM3IiwicXVlcnkiOiJjb2ZmZWUifQ==",
+                "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTQ5MzY2MTExMTY2NzQxNDU5MTciLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjcwMzIwMjI5NTYxNjEzNzMzMjMiLCJpbWFnZURvY2lkIjoiMTE5OTM5MTg0NzQxNzIxNzM0MyIsInJkcyI6IlBDXzg3OTcyMTY0MjU3MjU4NjE5Mzd8UFJPRF9QQ184Nzk3MjE2NDI1NzI1ODYxOTM3IiwicXVlcnkiOiJjb2ZmZWUifQ%3D%3D"
+            },
+            {
+                "category": "Popular products",
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcTuOn8ocpt56nJPFdWQZA7GNTScX1SthTItxT-nGI7EF2MEOdFGy5cxWJEZ197sFWUNenrJOo25",
+                "source_logo": "https://encrypted-tbn3.gstatic.com/favicon-tbn?q=tbn%3AANd9GcTnP5ISNmbEt5sfd-d6O77v8eZaWxR-UtwYkk865osEjKrS0r8udsVsfLPjH1VQBQizWhrYkhO2STFk8WaMhokVgFUhjn2NoxU",
+                "source": "Walmart",
+                "title": "Cafe Bustelo Coffee Espresso",
+                "rating": 4.7,
+                "reviews": 5700,
+                "price": "$5.37",
+                "extracted_price": 5.37,
+                "immersive_product_page_token": "eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzcxMjEyMTQyODA1NzU5MjU2MCIsInZjIjoiIiwidnNjIjoiIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMzQ2ODIxODEyNTM4NzgwODgyMyIsImltYWdlRG9jaWQiOiIxMDMwODYzNjE1ODg1OTEyOTgyNCIsInJkcyI6IlBDXzM4NzQxMjAxOTQzNjI0NTQ5NXxQUk9EX1BDXzM4NzQxMjAxOTQzNjI0NTQ5NSIsInF1ZXJ5IjoiY29mZmVlIn0=",
+                "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiNzcxMjEyMTQyODA1NzU5MjU2MCIsInZjIjoiIiwidnNjIjoiIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMzQ2ODIxODEyNTM4NzgwODgyMyIsImltYWdlRG9jaWQiOiIxMDMwODYzNjE1ODg1OTEyOTgyNCIsInJkcyI6IlBDXzM4NzQxMjAxOTQzNjI0NTQ5NXxQUk9EX1BDXzM4NzQxMjAxOTQzNjI0NTQ5NSIsInF1ZXJ5IjoiY29mZmVlIn0%3D"
+            },
+            {
+                "category": "Popular products",
+                "thumbnail": "https://encrypted-tbn2.gstatic.com/shopping?q=tbn:ANd9GcSeoj3WygVpIz_d7Fba2Yzs8l8Z_Sw1L2pbP-K6qhHu-ra70Paft2iH5hCBGEz_4IoLA7VPgyk",
+                "source_logo": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcT0TsMMuS8IRIUU_Envbo02npaZ6DJgbXTwa-h2DSMswBydNyxi_1NukUkPuQPc8-6EH8dopTDEyU5ccMeLEvcSrbCBtAW3",
+                "source": "Amazon.com",
+                "title": "AmazonFresh Colombia Ground Coffee",
+                "rating": 4.7,
+                "reviews": 6,
+                "price": "$5.21",
+                "extracted_price": 5.21,
+                "original_price": "$6",
+                "extracted_original_price": 6,
+                "extensions": [
+                    "7% OFF"
+                ],
+                "immersive_product_page_token": "eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMjc4MzkzMTAwNzM5NjczODk1NiIsInZjIjoiIiwidnNjIjoiIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTIzMzU3OTUxMTYxNjU1MDA1NTIiLCJpbWFnZURvY2lkIjoiMTM4MDM3NTIzMTUwNzM2OTUwNzAiLCJyZHMiOiJQQ18xNzYyODQ3MTI1MzI5NTU1NTI5MHxQUk9EX1BDXzE3NjI4NDcxMjUzMjk1NTU1MjkwIiwicXVlcnkiOiJjb2ZmZWUifQ==",
+                "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMjc4MzkzMTAwNzM5NjczODk1NiIsInZjIjoiIiwidnNjIjoiIiwiaGVhZGxpbmVPZmZlckRvY2lkIjoiMTIzMzU3OTUxMTYxNjU1MDA1NTIiLCJpbWFnZURvY2lkIjoiMTM4MDM3NTIzMTUwNzM2OTUwNzAiLCJyZHMiOiJQQ18xNzYyODQ3MTI1MzI5NTU1NTI5MHxQUk9EX1BDXzE3NjI4NDcxMjUzMjk1NTU1MjkwIiwicXVlcnkiOiJjb2ZmZWUifQ%3D%3D"
+            },
+            {
+                "category": "Popular products",
+                "thumbnail": "https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcSvTQ0h2OtqC09s8VAEkhoaq4UJbgEFMRWJrV43wQ86o8SJxsglPf8zJq4bdw",
+                "source_logo": "https://encrypted-tbn2.gstatic.com/favicon-tbn?q=tbn%3AANd9GcSP-3CAlIHM4vrNOnJx5Jd7oBV13KVkk1fiPTxyM09zvi5dG3Cb77DP5Yk91NGg0tnVV2YHLB83fSvddh4G2eFtTFdFtAhWT5aKHscH",
+                "source": "Bones Coffee Company",
+                "title": "Bones Coffee Company Bikini Bottom Brew Ground Coffee Beans",
+                "rating": 5,
+                "reviews": 1,
+                "price": "$17.99",
+                "extracted_price": 17.99,
+                "delivery": "Free $75+",
+                "immersive_product_page_token": "eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTEyMTQ3NTgxNjcxNjE1MDI4MDYiLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjUxNzE1MjkxOTkxODk0MjkyNjgiLCJpbWFnZURvY2lkIjoiODAzNDE5MDAyOTcyMTE5OTc1MyIsInJkcyI6IlBDXzkzNDI4NjUxMzIzOTcwMTE4MTR8UFJPRF9QQ185MzQyODY1MTMyMzk3MDExODE0IiwicXVlcnkiOiJjb2ZmZWUifQ==",
+                "serpapi_link": "https://serpapi.com/search.json?engine=google_immersive_product&page_token=eyJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicHJvZHVjdGlkIjoiIiwiY2F0YWxvZ2lkIjoiMTEyMTQ3NTgxNjcxNjE1MDI4MDYiLCJ2YyI6IiIsInZzYyI6IiIsImhlYWRsaW5lT2ZmZXJEb2NpZCI6IjUxNzE1MjkxOTkxODk0MjkyNjgiLCJpbWFnZURvY2lkIjoiODAzNDE5MDAyOTcyMTE5OTc1MyIsInJkcyI6IlBDXzkzNDI4NjUxMzIzOTcwMTE4MTR8UFJPRF9QQ185MzQyODY1MTMyMzk3MDExODE0IiwicXVlcnkiOiJjb2ZmZWUifQ%3D%3D"
+            }
+        ],
+        "related_questions": [
+            {
+                "question": "Is coffee good or bad for health?",
+                "snippet": "Good news: The case for coffee is stronger than ever. Study after study indicates you could be getting more from your favorite morning beverage than you thought: Coffee is chock full of substances that may help guard against conditions more common in women, including Alzheimer's disease and heart disease.",
+                "title": "9 Reasons Why (the Right Amount of) Coffee Is Good for You",
+                "link": "https://www.hopkinsmedicine.org/health/wellness-and-prevention/9-reasons-why-the-right-amount-of-coffee-is-good-for-you#:~:text=Good%20news%3A%20The%20case%20for,Alzheimer's%20disease%20and%20heart%20disease.",
+                "displayed_link": "https://www.hopkinsmedicine.org › health › 9-reasons-w...",
+                "source_logo": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/b0a21525512add1d0e411c2ad965a6a47a3b67038be0ac9f53f4b6317ac7f176.png",
+                "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJTa2M1U210UWN6WmpRazEyVlVvMVIzQjZhVkpXTFhGS09GRkdOMDlOYTJKM2EyZDRkeTFOY2xwdFpHdEtiRE5FTldack1teHlVRzF0UW5ZdFZERlpSREJ3UjBkRWJ6TlpNMFYxRWhkT2RFeGZXbkpVYjBsallUVjNUalJRYzNJdGNtMVJWUm9pUVVaWWNrVmpjRlZZWm0xM1gwTTRSM1ZyYW5GUWNEUk1VRTB5TFc1RlNFOWxRUSIsImZjdiI6IjMiLCJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicWMiOiJDZ1pqYjJabVpXVVFBSDJQd2pVXyIsInF1ZXN0aW9uIjoiSXMgY29mZmVlIGdvb2Qgb3IgYmFkIGZvciBoZWFsdGg/IiwibGsiOiJHaUJwY3lCamIyWm1aV1VnWjI5dlpDQnZjaUJpWVdRZ1ptOXlJR2hsWVd4MGFBIiwiYnMiOiJjLVB5NGxMMExGWkl6azlMUzAxVlNNX1BUMUhJTDFKSVNreFJTQVBTR2FtSk9TVVo5aEtiNVl5VXBCUXlDYWpqQ3VKU0RjOUlMRkZJTEVwVktNbElWY2hOek14VFNFck5TMDNMTENsV3lFLURhcmVYZU1kdHBDYWxVazZFV2k0OUxtR0UtNEJXZ1ZuMkVqX2tqVVNraERJeFpMamN1T1FSNmhNVjBvcEtNMHRBc21XcDZha2xpVWs1UUwzWFJZMFVwT1F5OGFvU1lBUUEiLCJpZCI6ImZjX050TF9aclRvSWNhNXdONFBzci1ybVFVXzIifQ==",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJTa2M1U210UWN6WmpRazEyVlVvMVIzQjZhVkpXTFhGS09GRkdOMDlOYTJKM2EyZDRkeTFOY2xwdFpHdEtiRE5FTldack1teHlVRzF0UW5ZdFZERlpSREJ3UjBkRWJ6TlpNMFYxRWhkT2RFeGZXbkpVYjBsallUVjNUalJRYzNJdGNtMVJWUm9pUVVaWWNrVmpjRlZZWm0xM1gwTTRSM1ZyYW5GUWNEUk1VRTB5TFc1RlNFOWxRUSIsImZjdiI6IjMiLCJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicWMiOiJDZ1pqYjJabVpXVVFBSDJQd2pVXyIsInF1ZXN0aW9uIjoiSXMgY29mZmVlIGdvb2Qgb3IgYmFkIGZvciBoZWFsdGg%2FIiwibGsiOiJHaUJwY3lCamIyWm1aV1VnWjI5dlpDQnZjaUJpWVdRZ1ptOXlJR2hsWVd4MGFBIiwiYnMiOiJjLVB5NGxMMExGWkl6azlMUzAxVlNNX1BUMUhJTDFKSVNreFJTQVBTR2FtSk9TVVo5aEtiNVl5VXBCUXlDYWpqQ3VKU0RjOUlMRkZJTEVwVktNbElWY2hOek14VFNFck5TMDNMTENsV3lFLURhcmVYZU1kdHBDYWxVazZFV2k0OUxtR0UtNEJXZ1ZuMkVqX2tqVVNraERJeFpMamN1T1FSNmhNVjBvcEtNMHRBc21XcDZha2xpVWs1UUwzWFJZMFVwT1F5OGFvU1lBUUEiLCJpZCI6ImZjX050TF9aclRvSWNhNXdONFBzci1ybVFVXzIifQ%3D%3D"
+            },
+            {
+                "question": "What are the main benefits of coffee?",
+                "snippet": "Improve overall health. The analysis found that during the study period, coffee drinkers were 17% less likely to die early from any cause, 19% less likely to die of heart disease and 18% less likely to develop cancer than those who don't drink coffee.",
+                "title": "Health Benefits of Coffee - Rush University Medical Center",
+                "link": "https://www.rush.edu/news/health-benefits-coffee#:~:text=Improve%20overall%20health.&text=The%20analysis%20found%20that%20during,who%20don't%20drink%20coffee.",
+                "displayed_link": "https://www.rush.edu › news › health-benefits-coffee",
+                "source_logo": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/b0a21525512add1d0e411c2ad965a6a4cb36b5aa51442fca5a155997853ab0b2.png",
+                "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJTa2M1U210UWN6WmpRazEyVlVvMVIzQjZhVkpXTFhGS09GRkdOMDlOYTJKM2EyZDRkeTFOY2xwdFpHdEtiRE5FTldack1teHlVRzF0UW5ZdFZERlpSREJ3UjBkRWJ6TlpNMFYxRWhkT2RFeGZXbkpVYjBsallUVjNUalJRYzNJdGNtMVJWUm9pUVVaWWNrVmpjRlZZWm0xM1gwTTRSM1ZyYW5GUWNEUk1VRTB5TFc1RlNFOWxRUSIsImZjdiI6IjMiLCJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicWMiOiJDZ1pqYjJabVpXVVFBSDJQd2pVXyIsInF1ZXN0aW9uIjoiV2hhdCBhcmUgdGhlIG1haW4gYmVuZWZpdHMgb2YgY29mZmVlPyIsImxrIjoiR2lSM2FHRjBJR0Z5WlNCMGFHVWdiV0ZwYmlCaVpXNWxabWwwY3lCdlppQmpiMlptWldVIiwiYnMiOiJjLVB5NGxMMExGWkl6azlMUzAxVlNNX1BUMUhJTDFKSVNreFJTQVBTR2FtSk9TVVo5aEtiNVl5VXBCUXlDYWpqQ3VKU0RjOUlMRkZJTEVwVktNbElWY2hOek14VFNFck5TMDNMTENsV3lFLURhcmVYZU1kdHBDYWxVazZFV2k0OUxtR0UtNEJXZ1ZuMkVqX2tqVVNraERJeFpMamN1T1FSNmhNVjBvcEtNMHRBc21XcDZha2xpVWs1UUwzWFJZMFVwT1F5OGFvU1lBUUEiLCJpZCI6ImZjX050TF9aclRvSWNhNXdONFBzci1ybVFVXzIifQ==",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJTa2M1U210UWN6WmpRazEyVlVvMVIzQjZhVkpXTFhGS09GRkdOMDlOYTJKM2EyZDRkeTFOY2xwdFpHdEtiRE5FTldack1teHlVRzF0UW5ZdFZERlpSREJ3UjBkRWJ6TlpNMFYxRWhkT2RFeGZXbkpVYjBsallUVjNUalJRYzNJdGNtMVJWUm9pUVVaWWNrVmpjRlZZWm0xM1gwTTRSM1ZyYW5GUWNEUk1VRTB5TFc1RlNFOWxRUSIsImZjdiI6IjMiLCJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicWMiOiJDZ1pqYjJabVpXVVFBSDJQd2pVXyIsInF1ZXN0aW9uIjoiV2hhdCBhcmUgdGhlIG1haW4gYmVuZWZpdHMgb2YgY29mZmVlPyIsImxrIjoiR2lSM2FHRjBJR0Z5WlNCMGFHVWdiV0ZwYmlCaVpXNWxabWwwY3lCdlppQmpiMlptWldVIiwiYnMiOiJjLVB5NGxMMExGWkl6azlMUzAxVlNNX1BUMUhJTDFKSVNreFJTQVBTR2FtSk9TVVo5aEtiNVl5VXBCUXlDYWpqQ3VKU0RjOUlMRkZJTEVwVktNbElWY2hOek14VFNFck5TMDNMTENsV3lFLURhcmVYZU1kdHBDYWxVazZFV2k0OUxtR0UtNEJXZ1ZuMkVqX2tqVVNraERJeFpMamN1T1FSNmhNVjBvcEtNMHRBc21XcDZha2xpVWs1UUwzWFJZMFVwT1F5OGFvU1lBUUEiLCJpZCI6ImZjX050TF9aclRvSWNhNXdONFBzci1ybVFVXzIifQ%3D%3D"
+            },
+            {
+                "question": "Is coffee or coffe?",
+                "snippet": "The present form of the word Coffee was first recorded in the seventeenth century. In the Turkish language it is spelled as Kahve , in Arabic Kahva . Apart from Turkish and Arabic it has also other variants like Cahve , Coffe , Cauphe , and Cophee. The use of double e in Coffee is not a new innovation .",
+                "title": "What is the difference between 'coffee' and 'cafe'? Are there ... - Quora",
+                "date": "Apr 21, 2023",
+                "link": "https://www.quora.com/What-is-the-difference-between-coffee-and-cafe-Are-there-any-other-words-ending-with-e-that-can-be-used-interchangeably#:~:text=The%20present%20form%20of%20the,is%20not%20a%20new%20innovation%20.",
+                "displayed_link": "https://www.quora.com › What-is-the-difference-betwee...",
+                "source_logo": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/b0a21525512add1d0e411c2ad965a6a413fd0fa8fd415c6785703a5eb645971e.png",
+                "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJTa2M1U210UWN6WmpRazEyVlVvMVIzQjZhVkpXTFhGS09GRkdOMDlOYTJKM2EyZDRkeTFOY2xwdFpHdEtiRE5FTldack1teHlVRzF0UW5ZdFZERlpSREJ3UjBkRWJ6TlpNMFYxRWhkT2RFeGZXbkpVYjBsallUVjNUalJRYzNJdGNtMVJWUm9pUVVaWWNrVmpjRlZZWm0xM1gwTTRSM1ZyYW5GUWNEUk1VRTB5TFc1RlNFOWxRUSIsImZjdiI6IjMiLCJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicWMiOiJDZ1pqYjJabVpXVVFBSDJQd2pVXyIsInF1ZXN0aW9uIjoiSXMgY29mZmVlIG9yIGNvZmZlPyIsImxrIjoiYzVNU3lpeFdTTTVQUzB0TlZjZ3ZnckFBIiwiYnMiOiJjLVB5NGxMMExGWkl6azlMUzAxVlNNX1BUMUhJTDFKSVNreFJTQVBTR2FtSk9TVVo5aEtiNVl5VXBCUXlDYWpqQ3VKU0RjOUlMRkZJTEVwVktNbElWY2hOek14VFNFck5TMDNMTENsV3lFLURhcmVYZU1kdHBDYWxVazZFV2k0OUxtR0UtNEJXZ1ZuMkVqX2tqVVNraERJeFpMamN1T1FSNmhNVjBvcEtNMHRBc21XcDZha2xpVWs1UUwzWFJZMFVwT1F5OGFvU1lBUUEiLCJpZCI6ImZjX050TF9aclRvSWNhNXdONFBzci1ybVFVXzIifQ==",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJTa2M1U210UWN6WmpRazEyVlVvMVIzQjZhVkpXTFhGS09GRkdOMDlOYTJKM2EyZDRkeTFOY2xwdFpHdEtiRE5FTldack1teHlVRzF0UW5ZdFZERlpSREJ3UjBkRWJ6TlpNMFYxRWhkT2RFeGZXbkpVYjBsallUVjNUalJRYzNJdGNtMVJWUm9pUVVaWWNrVmpjRlZZWm0xM1gwTTRSM1ZyYW5GUWNEUk1VRTB5TFc1RlNFOWxRUSIsImZjdiI6IjMiLCJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicWMiOiJDZ1pqYjJabVpXVVFBSDJQd2pVXyIsInF1ZXN0aW9uIjoiSXMgY29mZmVlIG9yIGNvZmZlPyIsImxrIjoiYzVNU3lpeFdTTTVQUzB0TlZjZ3ZnckFBIiwiYnMiOiJjLVB5NGxMMExGWkl6azlMUzAxVlNNX1BUMUhJTDFKSVNreFJTQVBTR2FtSk9TVVo5aEtiNVl5VXBCUXlDYWpqQ3VKU0RjOUlMRkZJTEVwVktNbElWY2hOek14VFNFck5TMDNMTENsV3lFLURhcmVYZU1kdHBDYWxVazZFV2k0OUxtR0UtNEJXZ1ZuMkVqX2tqVVNraERJeFpMamN1T1FSNmhNVjBvcEtNMHRBc21XcDZha2xpVWs1UUwzWFJZMFVwT1F5OGFvU1lBUUEiLCJpZCI6ImZjX050TF9aclRvSWNhNXdONFBzci1ybVFVXzIifQ%3D%3D"
+            },
+            {
+                "question": "Is coffee a fruit or vegetable?",
+                "snippet": "So, what is the verdict? Is coffee a fruit indeed? The answer is yes! Coffee cherries are classified as fruits because they contain seeds that are processed into roasted beans.",
+                "title": "Is Coffee A Fruit? Let's Get To The Bottom Of This Question",
+                "date": "Jan 28, 2023",
+                "link": "https://www.thirdwavecoffeeroasters.com/blogs/blog/is-coffee-a-fruit-lets-get-to-the-bottom-of-this-question#:~:text=So%2C%20what%20is%20the%20verdict,are%20processed%20into%20roasted%20beans.",
+                "displayed_link": "https://www.thirdwavecoffeeroasters.com › blogs › blog",
+                "source_logo": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/b0a21525512add1d0e411c2ad965a6a4170b5b03af8d826eb8e1541fa864bb64.png",
+                "next_page_token": "eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJTa2M1U210UWN6WmpRazEyVlVvMVIzQjZhVkpXTFhGS09GRkdOMDlOYTJKM2EyZDRkeTFOY2xwdFpHdEtiRE5FTldack1teHlVRzF0UW5ZdFZERlpSREJ3UjBkRWJ6TlpNMFYxRWhkT2RFeGZXbkpVYjBsallUVjNUalJRYzNJdGNtMVJWUm9pUVVaWWNrVmpjRlZZWm0xM1gwTTRSM1ZyYW5GUWNEUk1VRTB5TFc1RlNFOWxRUSIsImZjdiI6IjMiLCJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicWMiOiJDZ1pqYjJabVpXVVFBSDJQd2pVXyIsInF1ZXN0aW9uIjoiSXMgY29mZmVlIGEgZnJ1aXQgb3IgdmVnZXRhYmxlPyIsImxrIjoiR2g1cGN5QmpiMlptWldVZ1lTQm1jblZwZENCdmNpQjJaV2RsZEdGaWJHVSIsImJzIjoiYy1QeTRsTDBMRlpJems5TFMwMVZTTV9QVDFISUwxSklTa3hSU0FQU0dhbUpPU1VaOWhLYjVZeVVwQlF5Q2FqakN1SlNEYzlJTEZGSUxFcFZLTWxJVmNoTnpNeFRTRXJOUzAzTExDbFd5RS1EYXJlWGVNZHRwQ2FsVWs2RVdpNDlMbUdFLTRCV2dWbjJFal9ralVTa2hESXhaTGpjdU9RUjZoTVYwb3BLTTB0QXNtV3A2YWtsaVVrNVFMM1hSWTBVcE9ReThhb1NZQVFBIiwiaWQiOiJmY19OdExfWnJUb0ljYTV3TjRQc3Itcm1RVV8yIn0=",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_related_questions&google_domain=google.com&next_page_token=eyJvbnMiOiIxMDA0MSIsImZjIjoiRW9zQkNreEJTa2M1U210UWN6WmpRazEyVlVvMVIzQjZhVkpXTFhGS09GRkdOMDlOYTJKM2EyZDRkeTFOY2xwdFpHdEtiRE5FTldack1teHlVRzF0UW5ZdFZERlpSREJ3UjBkRWJ6TlpNMFYxRWhkT2RFeGZXbkpVYjBsallUVjNUalJRYzNJdGNtMVJWUm9pUVVaWWNrVmpjRlZZWm0xM1gwTTRSM1ZyYW5GUWNEUk1VRTB5TFc1RlNFOWxRUSIsImZjdiI6IjMiLCJlaSI6Ik50TF9aclRvSWNhNXdONFBzci1ybVFVIiwicWMiOiJDZ1pqYjJabVpXVVFBSDJQd2pVXyIsInF1ZXN0aW9uIjoiSXMgY29mZmVlIGEgZnJ1aXQgb3IgdmVnZXRhYmxlPyIsImxrIjoiR2g1cGN5QmpiMlptWldVZ1lTQm1jblZwZENCdmNpQjJaV2RsZEdGaWJHVSIsImJzIjoiYy1QeTRsTDBMRlpJems5TFMwMVZTTV9QVDFISUwxSklTa3hSU0FQU0dhbUpPU1VaOWhLYjVZeVVwQlF5Q2FqakN1SlNEYzlJTEZGSUxFcFZLTWxJVmNoTnpNeFRTRXJOUzAzTExDbFd5RS1EYXJlWGVNZHRwQ2FsVWs2RVdpNDlMbUdFLTRCV2dWbjJFal9ralVTa2hESXhaTGpjdU9RUjZoTVYwb3BLTTB0QXNtV3A2YWtsaVVrNVFMM1hSWTBVcE9ReThhb1NZQVFBIiwiaWQiOiJmY19OdExfWnJUb0ljYTV3TjRQc3Itcm1RVV8yIn0%3D"
+            }
+        ],
+        "organic_results": [
+            {
+                "position": 1,
+                "title": "Coffee",
+                "link": "https://en.wikipedia.org/wiki/Coffee",
+                "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://en.wikipedia.org/wiki/Coffee&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQFnoECHYQAQ&usg=AOvVaw0s4rPyJBlEpp-AarY2Utn7",
+                "displayed_link": "https://en.wikipedia.org › wiki › Coffee",
+                "thumbnail": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/ba03583ee6fab58deb5d4a7cf858d848e5e0bce5f17f86e476e118d8eb8deaf1.jpeg",
+                "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/ba03583ee6fab58deb5d4a7cf858d848ce6d501ffdd2f45cdf6c209c5b87f500.png",
+                "snippet": "Coffee is a beverage brewed from roasted coffee beans. Darkly colored, bitter, and slightly acidic, coffee has a stimulating effect on humans, primarily due ...",
+                "snippet_highlighted_words": [
+                    "Coffee",
+                    "coffee",
+                    "coffee"
+                ],
+                "sitelinks": {
+                    "inline": [
+                        {
+                            "title": "History",
+                            "link": "https://en.wikipedia.org/wiki/History_of_coffee"
+                        },
+                        {
+                            "title": "Coffee bean",
+                            "link": "https://en.wikipedia.org/wiki/Coffee_bean"
+                        },
+                        {
+                            "title": "Coffee culture",
+                            "link": "https://en.wikipedia.org/wiki/Coffee_culture"
+                        },
+                        {
+                            "title": "Coffee preparation",
+                            "link": "https://en.wikipedia.org/wiki/Coffee_preparation"
+                        }
+                    ]
+                },
+                "source": "Wikipedia"
+            },
+            {
+                "position": 2,
+                "title": "Starbucks Coffee Company",
+                "link": "https://www.starbucks.com/",
+                "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.starbucks.com/&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQFnoECFIQAQ&usg=AOvVaw1G5PhqPw6TVos-9iAP_inH",
+                "displayed_link": "https://www.starbucks.com",
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTciTfz4BxZw5PDU8Jxchf5-GSqrBDUGsCb0tANwoa8KdFOX9xRV-Xu&usqp=CAE&s",
+                "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/ba03583ee6fab58deb5d4a7cf858d8488e0096e1c103776214b7bb9dfa6c4110.png",
+                "snippet": "More than just great coffee. Explore the menu, sign up for Starbucks® Rewards, manage your gift card and more.",
+                "snippet_highlighted_words": [
+                    "coffee"
+                ],
+                "source": "Starbucks"
+            },
+            {
+                "position": 3,
+                "title": "Peet's Coffee | The Original Craft Coffee, Est. 1966",
+                "link": "https://www.peets.com/",
+                "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.peets.com/&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQFnoFCIEBEAE&usg=AOvVaw35gJjisbo_2l0MyTsLBvru",
+                "displayed_link": "https://www.peets.com",
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSjSdkHZ_5M21dDmsD9EYHCw6cebeuPksqvXAJ3uk4L-0r73OQBJoqW&usqp=CAE&s",
+                "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/ba03583ee6fab58deb5d4a7cf858d84823a59c6f5ec7e88a00c2ab26a008cefa.png",
+                "snippet": "Since 1966, Peet's Coffee has sourced and offered superior coffees and teas and adhering to strict high-quality and taste standards. Shop today.",
+                "snippet_highlighted_words": [
+                    "Coffee",
+                    "coffees"
+                ],
+                "source": "Peet's Coffee"
+            },
+            {
+                "position": 4,
+                "title": "What is Coffee?",
+                "link": "https://www.ncausa.org/about-coffee/what-is-coffee",
+                "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.ncausa.org/about-coffee/what-is-coffee&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQFnoECFsQAQ&usg=AOvVaw2XmPL8Fk8zscX_Pz3xOQnw",
+                "displayed_link": "https://www.ncausa.org › About Coffee › What is Coffee?",
+                "snippet": "Coffee traces its origin to a genus of plants known as Coffea. Within the genus there are over 500 genera and 6,000 species of tropical trees and shrubs.",
+                "snippet_highlighted_words": [
+                    "Coffee"
+                ],
+                "source": "National Coffee Association"
+            },
+            {
+                "position": 5,
+                "title": "Equator Coffees | Sustainable Coffee Roaster | Order Coffee ...",
+                "link": "https://www.equatorcoffees.com/?srsltid=AfmBOopQs8I7QnwB8SdLJx1xu4nPHm3iI3QxtwjXgfxolbpiYa88rBvL",
+                "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.equatorcoffees.com/%3Fsrsltid%3DAfmBOopQs8I7QnwB8SdLJx1xu4nPHm3iI3QxtwjXgfxolbpiYa88rBvL&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQFnoECFEQAQ&usg=AOvVaw1Ba83v3RWQHQWYndtdIqd9",
+                "displayed_link": "https://www.equatorcoffees.com",
+                "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/ba03583ee6fab58deb5d4a7cf858d8486ab3630b16782b540e32e13ff9e3e301.png",
+                "snippet": "Equator Coffees is a coffee roaster, cafe operator, and coffee farm owner. Founded in 1995, Equator is known for a commitment to sustainably harvested ...",
+                "snippet_highlighted_words": [
+                    "Coffees",
+                    "coffee",
+                    "coffee"
+                ],
+                "rich_snippet": {
+                    "top": {
+                        "detected_extensions": {
+                            "price": 3,
+                            "currency": "Free – day delivery over $",
+                            "free": 30
+                        },
+                        "extensions": [
+                            "$17 to $22",
+                            "‎Free 3–5 day delivery over $40",
+                            "‎Free 30",
+                            "day returns"
+                        ]
+                    }
+                },
+                "source": "Equator Coffees"
+            },
+            {
+                "position": 6,
+                "title": "r/Coffee",
+                "link": "https://www.reddit.com/r/Coffee/",
+                "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.reddit.com/r/Coffee/&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQFnoECHkQAQ&usg=AOvVaw0vvOv-V-_UOf6FnDuYSQa2",
+                "displayed_link": "2.1M+ followers",
+                "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/ba03583ee6fab58deb5d4a7cf858d8488aa9b3c103ddf4685da8b75dd95ab082.png",
+                "snippet": "thread where you can share what you are brewing or ask for bean recommendations. This is a place to share and talk about your favorite coffee roasters or beans.",
+                "snippet_highlighted_words": [
+                    "coffee"
+                ],
+                "sitelinks": {
+                    "inline": [
+                        {
+                            "title": "Wiki Home",
+                            "link": "https://www.reddit.com/r/Coffee/wiki/index/"
+                        },
+                        {
+                            "title": "Coffee forums?",
+                            "link": "https://www.reddit.com/r/Coffee/comments/502wmb/coffee_forums/"
+                        },
+                        {
+                            "title": "Coffee in Japan",
+                            "link": "https://www.reddit.com/r/Coffee/comments/9e3wh9/coffee_in_japan/"
+                        },
+                        {
+                            "title": "The future of coffee",
+                            "link": "https://www.reddit.com/r/Coffee/comments/vye56t/the_future_of_coffee_wheres_it_going/"
+                        }
+                    ],
+                    "list": [
+                        {
+                            "title": "Coffee Beans! : r/nightingale",
+                            "link": "https://www.reddit.com/r/nightingale/comments/1fvbniz/coffee_beans/",
+                            "date": "Oct 3, 2024"
+                        },
+                        {
+                            "title": "Summit Coffee, NC : r/pourover",
+                            "link": "https://www.reddit.com/r/pourover/comments/1fumkq8/summit_coffee_nc/",
+                            "date": "Oct 2, 2024"
+                        }
+                    ]
+                },
+                "source": "Reddit · r/Coffee"
+            },
+            {
+                "position": 7,
+                "title": "BUT FIRST, COFFEE. - Los Angeles",
+                "link": "https://alfred.la/?srsltid=AfmBOoq5Xk45FdRGhLTQa2TT3D3mUpXLplgCEPqzhN-Sqa5qTDbNz9CE",
+                "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://alfred.la/%3Fsrsltid%3DAfmBOoq5Xk45FdRGhLTQa2TT3D3mUpXLplgCEPqzhN-Sqa5qTDbNz9CE&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQFnoECGMQAQ&usg=AOvVaw18Ss11RGO8yVPFEzbuoEdQ",
+                "displayed_link": "https://alfred.la",
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSfzh3J6Jgmf9QIek2TeuDC5Q5ks_QmDIr9rmNmQD8OAAQNFe2DsTVH&usqp=CAE&s",
+                "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/ba03583ee6fab58deb5d4a7cf858d848e2c308a4508617be23334889d281c5e6.png",
+                "snippet": "Since opening on Melrose Place in 2013, Alfred has made waves with its sleek decors, killer customer service, and innovative coffee and tea drinks.",
+                "snippet_highlighted_words": [
+                    "coffee"
+                ],
+                "sitelinks": {
+                    "inline": [
+                        {
+                            "title": "Locations",
+                            "link": "https://locations.alfred.la/"
+                        },
+                        {
+                            "title": "Coffee",
+                            "link": "https://alfred.la/collections/coffee"
+                        },
+                        {
+                            "title": "Products",
+                            "link": "https://alfred.la/collections/all"
+                        },
+                        {
+                            "title": "ESPRESSO Coffee",
+                            "link": "https://alfred.la/products/espresso"
+                        }
+                    ]
+                },
+                "rich_snippet": {
+                    "top": {
+                        "detected_extensions": {
+                            "day_delivery": 5
+                        },
+                        "extensions": [
+                            "5–8 day delivery"
+                        ]
+                    }
+                },
+                "source": "alfred.la"
+            },
+            {
+                "position": 8,
+                "title": "Cameron's Coffee: Home",
+                "link": "https://www.cameronscoffee.com/",
+                "redirect_link": "https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://www.cameronscoffee.com/&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQFnoECFMQAQ&usg=AOvVaw04NRqxsCPdwpb2KYu9pJ0y",
+                "displayed_link": "https://www.cameronscoffee.com",
+                "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRp4gAKp3qpCJ-qVUlUscB2BQgNbRO6OdryIP1JORCHZ1Bn_rCKuk2c&usqp=CAE&s",
+                "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/ba03583ee6fab58deb5d4a7cf858d848ac349b305c66ad292446e6d7856d98d4.png",
+                "snippet": "Coffee that's always smooth, never bitter. With over 80 different blends, we're dedicated to crafting the perfect coffee for you to brew at home.",
+                "snippet_highlighted_words": [
+                    "Coffee",
+                    "coffee"
+                ],
+                "sitelinks": {
+                    "inline": [
+                        {
+                            "title": "Shop",
+                            "link": "https://www.cameronscoffee.com/coffee/"
+                        },
+                        {
+                            "title": "About Your Coffee",
+                            "link": "https://www.cameronscoffee.com/about-your-coffee/"
+                        },
+                        {
+                            "title": "Store Finder",
+                            "link": "https://www.cameronscoffee.com/store-finder/"
+                        },
+                        {
+                            "title": "Flavored Coffee",
+                            "link": "https://www.cameronscoffee.com/coffee/filters/family/flavored/"
+                        }
+                    ]
+                },
+                "rich_snippet": {
+                    "top": {
+                        "detected_extensions": {
+                            "price": 8,
+                            "currency": "$ to $",
+                            "day_delivery": 5,
+                            "unknown": 30
+                        },
+                        "extensions": [
+                            "$8 to $42",
+                            "‎5–12 day delivery",
+                            "‎30",
+                            "day returns"
+                        ]
+                    }
+                },
+                "source": "Cameron's Coffee"
+            }
+        ],
+        "top_stories_link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&tbs=lf:1,lf_ui:9&tbm=lcl&q=coffee&rflfq=1&num=10&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQjGp6BAg9EAE",
+        "top_stories_serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google_local&gl=us&google_domain=google.com&hl=en&q=coffee&tbs=lf%3A1%2Clf_ui%3A9",
+        "related_searches": [
+            {
+                "block_position": 1,
+                "query": "Coffee near me",
+                "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=Coffee+near+me&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ1QJ6BAh6EAE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Coffee+near+me"
+            },
+            {
+                "block_position": 1,
+                "query": "Coffee benefits",
+                "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=Coffee+benefits&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ1QJ6BAh4EAE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Coffee+benefits"
+            },
+            {
+                "block_position": 1,
+                "query": "Coffee types",
+                "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=Coffee+types&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ1QJ6BAh3EAE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Coffee+types"
+            },
+            {
+                "block_position": 1,
+                "query": "Coffee recipe",
+                "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=Coffee+recipe&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ1QJ6BAh0EAE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Coffee+recipe"
+            },
+            {
+                "block_position": 1,
+                "query": "Coffee beans",
+                "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=Coffee+beans&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ1QJ6BAhzEAE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Coffee+beans"
+            },
+            {
+                "block_position": 1,
+                "query": "Coffee Machine",
+                "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=Coffee+Machine&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ1QJ6BAhyEAE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Coffee+Machine"
+            },
+            {
+                "block_position": 1,
+                "query": "Coffee brands",
+                "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=Coffee+brands&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ1QJ6BAhxEAE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Coffee+brands"
+            },
+            {
+                "block_position": 1,
+                "query": "Coffee shop",
+                "link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=Coffee+shop&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ1QJ6BAhwEAE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=Coffee+shop"
+            }
+        ],
+        "refine_this_search": [
+            {
+                "query": "Nearby",
+                "link": "https://www.google.com/search?q=coffee+nearby&shoprs=GAMqBmNvZmZlZTIMCAMSBk5lYXJieRgCWLfLH2AB&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAF6BAghEGI",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee+nearby"
+            },
+            {
+                "query": "Get it fast",
+                "link": "https://www.google.com/search?q=coffee&shoprs=Eg2aAQoKCBADOAFAAUgBGBQqBmNvZmZlZTIkCBQSC0dldCBpdCBmYXN0Ig2aAQoKCBADOAFAAUgBKgQQARgBYAE&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAJ6BAghEGM",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee"
+            },
+            {
+                "query": "Whole Bean",
+                "link": "https://www.google.com/search?q=whole+bean+coffee&shoprs=GAEqBmNvZmZlZTIaCAESCldob2xlIEJlYW46Cgju_jgQ8f44MAJYt8sfYAE&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAN6BAghEGQ",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=whole+bean+coffee"
+            },
+            {
+                "query": "On sale",
+                "link": "https://www.google.com/search?q=coffee+sale&shoprs=EgRKAhgBGAYqBmNvZmZlZTITCAYSB09uIHNhbGUYAiIESgIYAVi3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAR6BAghEGU",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee+sale"
+            },
+            {
+                "query": "Brand",
+                "link": "https://www.google.com/search?q=brand+coffee&shoprs=GBIqBmNvZmZlZTIJCBISBUJyYW5kYAE&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAV6BAghEGY",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=brand+coffee"
+            },
+            {
+                "query": "Pod",
+                "link": "https://www.google.com/search?q=pod+coffee&shoprs=GAEqBmNvZmZlZTITCAESA1BvZDoKCPucZRD8nGUwA1i3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAZ6BAghEGc",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=pod+coffee"
+            },
+            {
+                "query": "Bag",
+                "link": "https://www.google.com/search?q=bag+coffee&shoprs=GAEqBmNvZmZlZTITCAESA0JhZzoKCIGdZRCEnWUwAFi3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAd6BAghEGg",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=bag+coffee"
+            },
+            {
+                "query": "Ground",
+                "link": "https://www.google.com/search?q=ground+coffee&shoprs=GAEqBmNvZmZlZTIWCAESBkdyb3VuZDoKCO7-OBDv_jgwAli3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAh6BAghEGk",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=ground+coffee"
+            },
+            {
+                "query": "12 oz – 2 lb",
+                "link": "https://www.google.com/search?q=12+oz+to+2+lb+coffee&shoprs=EhoqGAj-nGUSEgkAAABgvsXVPxEAAABAqAftPxgBKgZjb2ZmZWUySwgBEg4xMiBveiDigJMgMiBsYiIaKhgI_pxlEhIJAAAAYL7F1T8RAAAAQKgH7T8qEQoNMTIgb3ogdG8gMiBsYhgBOggI_pxlEAAwBli3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAl6BAghEGo",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=12+oz+to+2+lb+coffee"
+            },
+            {
+                "query": "Buy",
+                "link": "https://www.google.com/search?q=buy+coffee&shoprs=GBIqBmNvZmZlZTIHCBISA0J1eWAB&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAp6BAghEGs",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=buy+coffee"
+            },
+            {
+                "query": "Caffeine-free",
+                "link": "https://www.google.com/search?q=caffeine-free+coffee&shoprs=GAEqBmNvZmZlZTIfCAESDUNhZmZlaW5lLWZyZWU6DAig8YoBEKHxigEwA1i3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAt6BAghEGw",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=caffeine-free+coffee"
+            },
+            {
+                "query": "7.05 – 12 oz",
+                "link": "https://www.google.com/search?q=7.05+oz+to+12+oz+coffee&shoprs=EhoqGAj-nGUSEgkAAACgJZXJPxEAAABgvsXVPxgBKgZjb2ZmZWUyTggBEg43LjA1IOKAkyAxMiBveiIaKhgI_pxlEhIJAAAAoCWVyT8RAAAAYL7F1T8qFAoQNy4wNSBveiB0byAxMiBvehgBOggI_pxlEAAwBli3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKAx6BAghEG0",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=7.05+oz+to+12+oz+coffee"
+            },
+            {
+                "query": "Organic",
+                "link": "https://www.google.com/search?q=organic+coffee&shoprs=GAEqBmNvZmZlZTIZCAESB09yZ2FuaWM6DAi--YcBEL_5hwEwA1i3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKA16BAghEG4",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=organic+coffee"
+            },
+            {
+                "query": "Over 2 lb",
+                "link": "https://www.google.com/search?q=over+2+lb+coffee&shoprs=EhEqDwj-nGUSCQkAAABAqAftPxgBKgZjb2ZmZWUyLggBEglPdmVyIDIgbGIiESoPCP6cZRIJCQAAAECoB-0_KgIYAToICP6cZRAAMAZYt8sfYAE&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKA56BAghEG8",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=over+2+lb+coffee"
+            },
+            {
+                "query": "Under 7.05 oz",
+                "link": "https://www.google.com/search?q=under+7.05+oz+coffee&shoprs=EhEqDwj-nGUSCREAAACgJZXJPxgBKgZjb2ZmZWUyMggBEg1VbmRlciA3LjA1IG96IhEqDwj-nGUSCREAAACgJZXJPyoCGAE6CAj-nGUQADAGWLfLH2AB&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKA96BAghEHA",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=under+7.05+oz+coffee"
+            },
+            {
+                "query": "Online",
+                "link": "https://www.google.com/search?q=online+coffee&shoprs=GBIqBmNvZmZlZTIKCBISBk9ubGluZWAB&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBB6BAghEHE",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=online+coffee"
+            },
+            {
+                "query": "Store",
+                "link": "https://www.google.com/search?q=store+coffee&shoprs=GBIqBmNvZmZlZTIJCBISBVN0b3JlYAE&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBF6BAghEHI",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=store+coffee"
+            },
+            {
+                "query": "Can",
+                "link": "https://www.google.com/search?q=can+coffee&shoprs=GAEqBmNvZmZlZTITCAESA0NhbjoKCIGdZRCGnWUwAFi3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBJ6BAghEHM",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=can+coffee"
+            },
+            {
+                "query": "Under $7",
+                "link": "https://www.google.com/search?q=coffee+under+$7&shoprs=Eg0SCxEAAAAA8LNaQRgBGAUqBmNvZmZlZTIhCAUSCFVuZGVyICQ3GAIiDRILEQAAAADws1pBGAEqAhgBWLfLH2AB&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBN6BAghEHQ",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee+under+%247"
+            },
+            {
+                "query": "Medium Roast",
+                "link": "https://www.google.com/search?q=medium+roast+coffee&shoprs=GAEqBmNvZmZlZTIcCAESDE1lZGl1bSBSb2FzdDoKCJm4OxCbuDswAFi3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBR6BAghEHU",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=medium+roast+coffee"
+            },
+            {
+                "query": "Chocolate",
+                "link": "https://www.google.com/search?q=chocolate+coffee&shoprs=GAEqBmNvZmZlZTIZCAESCUNob2NvbGF0ZToKCIidZRCMnWUwAFi3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBV6BAghEHY",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=chocolate+coffee"
+            },
+            {
+                "query": "Starbucks",
+                "link": "https://www.google.com/search?q=starbucks+coffee&shoprs=GAEqBmNvZmZlZTIZCAESCVN0YXJidWNrczoKCIPzPBCdmUAwAVi3yx9gAQ&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBZ6BAghEHc",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=starbucks+coffee"
+            },
+            {
+                "query": "Price",
+                "link": "https://www.google.com/search?q=price+coffee&shoprs=GBIqBmNvZmZlZTIJCBISBVByaWNlYAE&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBd6BAghEHg",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=price+coffee"
+            },
+            {
+                "query": "Kosher",
+                "link": "https://www.google.com/search?q=kosher+coffee&shoprs=GAEqBmNvZmZlZTIYCAESBktvc2hlcjoMCPHfhwEQ8t-HATADWLfLH2AB&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQip4GKBh6BAghEHk",
+                "serpapi_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=kosher+coffee"
+            }
+        ],
+        "things_to_know": {
+            "buttons": [
+                {
+                    "text": "Caffeine Amount",
+                    "subtitle": "How Much Caffeine In Coffee?",
+                    "title": "How much caffeine is in a cup of coffee? - MedicalNewsToday",
+                    "link": "https://www.medicalnewstoday.com/articles/324986#:~:text=An%20average%208%E2%80%93ounce%20(oz,much%20caffeine%20can%20be%20unsafe.",
+                    "displayed_link": "https://www.medicalnewstoday.com › articles",
+                    "snippet": "An average 8–ounce (oz) cup of coffee contains around 80–100 milligrams (mg) of caffeine. However, the caffeine content can vary considerably depending on several factors such as coffee type, brewing method, and brand. Caffeine can be a part of a healthy diet for most people. However, too much caffeine can be unsafe.",
+                    "snippet_highlighted_words": [
+                        "80–100 milligrams (mg)"
+                    ],
+                    "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/cd0b8dea7975f3462fb9013f8dd4cf42f4a8709c90c0e612f17b7a188483b656f24a85ae22162661.png",
+                    "source": "medicalnewstoday.com",
+                    "search_link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=how+much+caffeine+in+coffee&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQrooIegQIVRAH",
+                    "serpapi_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=how+much+caffeine+in+coffee"
+                },
+                {
+                    "text": "Optimal time",
+                    "subtitle": "What Is The Best Time To Drink Coffee",
+                    "title": "What's The Best Time Of Day To Drink Coffee? - Redcliffe Labs",
+                    "link": "https://redcliffelabs.com/myhealth/health/whats-the-best-time-of-day-to-drink-coffee/#:~:text=Here%20is%20what%20some%20experts,best%20time'%20to%20drink%20coffee.",
+                    "displayed_link": "https://redcliffelabs.com › myhealth › health › whats-the-...",
+                    "date": "Jul 22, 2024",
+                    "snippet": "Here is what some experts say: Coffee in the morning increases cortisol levels and can make you feel weird and anxious, whereas coffee at night can affect metabolism and slumber. A suitable time for coffee is between 9:30 AM to 11:00 AM. However, there is no 'best time' to drink coffee.",
+                    "snippet_highlighted_words": [
+                        "between 9:30 AM to 11:00 AM"
+                    ],
+                    "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/cd0b8dea7975f3462fb9013f8dd4cf42bac8308860ef8af5d30af47e126b4711cdbed6c8f1e8f5a3.png",
+                    "source": "redcliffelabs.com",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ8pIW1yGdnPNrWix-mA9zBjU3iOVwpohq8zIwP5-1z6qI&s",
+                    "search_link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=what+is+the+best+time+to+drink+coffee&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQrooIegQIVRAQ",
+                    "serpapi_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=what+is+the+best+time+to+drink+coffee"
+                },
+                {
+                    "text": "Good or not",
+                    "subtitle": "Is Coffee Good For Your Skin",
+                    "title": "Coffee for skin and hair: 8 benefits and how to use it - MedicalNewsToday",
+                    "link": "https://www.medicalnewstoday.com/articles/322875#:~:text=Results%20of%20a%20study%20from,protect%20the%20skin%20against%20germs.",
+                    "displayed_link": "https://www.medicalnewstoday.com › articles",
+                    "date": "Aug 24, 2018",
+                    "snippet": "Results of a study from 2013 suggest that substances in coffee also help to promote healthy skin. Caffeic acid, an antioxidant, may boost collagen levels and reduce the premature aging of cells. Caffeic acid also has antimicrobial properties, which means that it may help protect the skin against germs.",
+                    "snippet_highlighted_words": [
+                        "substances in coffee also help to promote healthy skin"
+                    ],
+                    "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/cd0b8dea7975f3462fb9013f8dd4cf423a66cb9e8b0450398b0046986bbe56ea356dccafe1c92fa8.png",
+                    "source": "medicalnewstoday.com",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ6kRaaVhMMcoNF3mIkqwwqfZ5SWHdaRYLBv683uNbyhDQ&s",
+                    "search_link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=is+coffee+good+for+your+skin&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQrooIegQIVRAZ",
+                    "serpapi_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=is+coffee+good+for+your+skin"
+                },
+                {
+                    "text": "Main types",
+                    "subtitle": "Main Types Of Coffee",
+                    "title": "Coffee Bean Types and Their Characteristics - Cafédirect",
+                    "link": "https://www.cafedirect.co.uk/shop/coffee-bean-types-and-their-characteristics/#:~:text=The%20four%20main%20coffee%20types,have%20radically%20different%20taste%20profiles.",
+                    "displayed_link": "https://www.cafedirect.co.uk › shop › coffee-bean-types-...",
+                    "snippet": "The four main coffee types are Arabica, Robusta, Excelsa, and Liberica and all four of them have radically different taste profiles.",
+                    "snippet_highlighted_words": [
+                        "Arabica, Robusta, Excelsa, and Liberica"
+                    ],
+                    "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/cd0b8dea7975f3462fb9013f8dd4cf4249c0df2fe8ed70e03f685387eca5d591fa0ada34c03098a2.png",
+                    "source": "cafedirect.co.uk",
+                    "thumbnail": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTeeQO_Hea6WKvs6eSO43WXVtkqEiwl0Z9H9kNYGaK8CyE&s",
+                    "search_link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=main+types+of+coffee&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQrooIegQIVRAi",
+                    "serpapi_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=main+types+of+coffee"
+                },
+                {
+                    "text": "Brands",
+                    "subtitle": "Coffee Brands",
+                    "title": "Top 10 Coffee Brands In India 2024 - Kompass solutions",
+                    "link": "https://in.solutions.kompass.com/blog/top-10-coffee-brands-in-india/",
+                    "displayed_link": "https://in.solutions.kompass.com › blog › top-10-coffee-...",
+                    "date": "Apr 15, 2023",
+                    "snippet": "Top 10 Coffee Brands in India",
+                    "snippet_highlighted_words": [
+                        "Top 10 Coffee Brands in India"
+                    ],
+                    "list": [
+                        "2.1. Nescafe.",
+                        "2.2. Bru.",
+                        "2.3. Tata Coffee.",
+                        "2.4. Blue Tokai.",
+                        "2.5. Davidoff.",
+                        "2.6. Starbucks.",
+                        "2.7. The Flying Squirrel.",
+                        "2.8. Continental Xtra Coffee."
+                    ],
+                    "favicon": "https://serpapi.com/searches/66ffd235d403e195cc1950d5/images/cd0b8dea7975f3462fb9013f8dd4cf429ae3f6e4295520d92f69ed0eb710c80305edc3b7a55e00ec.png",
+                    "source": "kompass.com",
+                    "search_link": "https://www.google.com/search?sca_esv=fe1d248b964710f2&q=coffee+brands&sa=X&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQrooIegQIVRAo",
+                    "serpapi_search_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee+brands"
+                }
+            ]
+        },
+        "pagination": {
+            "current": 1,
+            "next": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=10&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8NMDegUIhQEQFg",
+            "other_pages": {
+                "2": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=10&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQBA",
+                "3": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=20&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQBg",
+                "4": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=30&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQCA",
+                "5": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=40&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQCg",
+                "6": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=50&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQDA",
+                "7": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=60&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQDg",
+                "8": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=70&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQEA",
+                "9": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=80&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQEg",
+                "10": "https://www.google.com/search?q=coffee&sca_esv=fe1d248b964710f2&ei=NtL_ZrToIca5wN4Psr-rmQU&start=90&sa=N&sstk=AagrsugYEjq35qrnhYm-2sgVihBkWQDXvKwuwvvj4wQmZeFLXd6tOgGcoTrGh_LtMQlqAa2IWbQuEvtv7vpX4LIvjUhF72nbm3eMzQ&ved=2ahUKEwi02-Oq0PSIAxXGHNAFHbLfKlMQ8tMDegUIhQEQFA"
+            }
+        },
+        "serpapi_pagination": {
+            "current": 1,
+            "next_link": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=10",
+            "next": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=10",
+            "other_pages": {
+                "2": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=10",
+                "3": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=20",
+                "4": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=30",
+                "5": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=40",
+                "6": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=50",
+                "7": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=60",
+                "8": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=70",
+                "9": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=80",
+                "10": "https://serpapi.com/search.json?device=desktop&engine=google&google_domain=google.com&q=coffee&start=90"
+            }
+        }
+    },
+    "status": 200,
+    "statusText": "",
+    "headers": {
+        "content-length": "79131"
+    },
+    "config": {
+        "transitional": {
+            "silentJSONParsing": true,
+            "forcedJSONParsing": true,
+            "clarifyTimeoutError": false
+        },
+        "adapter": [
+            "xhr",
+            "http",
+            "fetch"
+        ],
+        "transformRequest": [
+            null
+        ],
+        "transformResponse": [
+            null
+        ],
+        "timeout": 0,
+        "xsrfCookieName": "XSRF-TOKEN",
+        "xsrfHeaderName": "X-XSRF-TOKEN",
+        "maxContentLength": -1,
+        "maxBodyLength": -1,
+        "env": {},
+        "headers": {
+            "Accept": "application/json, text/plain, */*"
+        },
+        "params": {
+            "engine": "google",
+            "q": "coffee",
+            "api_key": "177e05c2db3e213b4f0f367a6272a253d13972eb9c6eb539bd776d447a5b449d"
+        },
+        "method": "get",
+        "url": "https://hook.us2.make.com/qfn7qbhmeyfg73pg0ohxrg4xgdtokqhf"
+    },
+    "request": {}
+}
