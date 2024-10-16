@@ -1,7 +1,10 @@
+/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 import axios from "axios";
+import { useEffect, useState } from "react";
+import { supabase } from "../pages/client";
 
 
 
@@ -9,6 +12,27 @@ import axios from "axios";
 
 
 const Landing = () => {
+
+  const [loggedIn, setLoggedIn] = useState(false);
+  const [username, setUsername] = useState('');
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    const checkSession = async () => {
+      const { data: { session } } = await supabase.auth.getSession();
+      console.log("Current session:", session);
+
+      if (session) {
+        setLoggedIn(true);
+        setUsername(session.user.email); // Or any property that holds the username
+        console.log("User is logged in:", session.user);
+      } else {
+        console.log("No active session found.");
+      }
+    };
+
+    checkSession();
+  }, []);
 
   const handlePayment = async () => {
     try {
@@ -58,12 +82,16 @@ const Landing = () => {
             <p className="text-xl mb-8">
               Discover and compare products instantly using our powerful AI.
             </p>
-            <motion.button
-              className="bg-white text-blue-600 py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300"
-              whileHover={{ scale: 1.1 }}
-            >
-              Get Started
-            </motion.button>
+           
+            {loggedIn ? (
+  <p>Welcome, {username}!</p> // Show welcome message
+) : (
+  <Link to="/login">
+    <motion.button className="ml-3 bg-white text-blue-600 py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300" whileHover={{ scale: 1.1 }}>
+      Login to Your Account
+    </motion.button>
+  </Link>
+)}
           </div>
         </motion.header>
 

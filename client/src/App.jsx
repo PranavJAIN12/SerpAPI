@@ -5,6 +5,8 @@ import Home from './components/Home'
 import Landing from './components/Landing'
 import Success from './pages/success'
 import Fail from './pages/fail'
+
+import Login from './pages/Login'
 function App() {
   
 
@@ -15,6 +17,7 @@ function App() {
         <Route path='/home' element={<Home/>}/>
         <Route path='/success' element={<Success/>}/>
         <Route path='/fail' element={<Fail/>}/>
+        <Route path='/login' element={<Login/>}/>
       </Routes>
     </>
   )
