@@ -22,8 +22,9 @@ const plans = [
 ];
 
 app.post("/create-subs", async (req, res) => {
-  const { plan_name, duration } = req.body;
+  const { plan_name, duration, email } = req.body; // Get email from request body
   const plan = plans.find(_plan => _plan.plan_name === plan_name && _plan.duration === duration); // Find the plan
+
   if (!plan) {
     return res.status(400).json({ message: "Plan not found" });
   }
@@ -40,14 +41,16 @@ app.post("/create-subs", async (req, res) => {
       ],
       success_url: `http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: "http://localhost:5173/fail",
-      customer_email: 'masterpranavjain2@gmail.com'
+      customer_email: email // Use dynamic email from request
     });
+
     return res.status(200).json({ session });
   } catch (error) {
     console.error(error);
     return res.status(500).json({ error: 'Something went wrong' });
   }
 });
+
 
 app.post("/save-payment", async(req,res)=>{
   const {session_id} =  req.body;

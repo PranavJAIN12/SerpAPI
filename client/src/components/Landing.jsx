@@ -36,31 +36,41 @@ const Landing = () => {
 
   const handlePayment = async () => {
     try {
+      const { data: { session } } = await supabase.auth.getSession(); // Get the user's session
+      const userEmail = session.user.email; // Get the logged-in user's email
+  
       const response = await axios.post('http://localhost:3000/create-subs', {
         plan_name: '3-mon', 
-        duration: 'month'   
+        duration: 'month',
+        email: userEmail // Pass user's email to backend
       });
-      console.log({data:response.data})
-      const session = response.data.session;
-      window.location.href = session.url; // Redirect to Stripe checkout
+      
+      console.log({ data: response.data });
+      const sessionData = response.data.session;
+      window.location.href = sessionData.url; // Redirect to Stripe checkout
     } catch (error) {
       console.error('Error creating subscription', error);
     }
   };
 
-  const handleAnnualPayment=async()=>{
+  const handleAnnualPayment = async () => {
     try {
+      const { data: { session } } = await supabase.auth.getSession(); // Get the user's session
+      const userEmail = session.user.email; // Get the logged-in user's email
+  
       const response = await axios.post('http://localhost:3000/create-subs', {
-        plan_name: 'annual', 
-        duration: 'year'   
+        plan_name: 'annual',
+        duration: 'year',
+        email: userEmail // Pass user's email to backend
       });
-      console.log({data:response.data})
-      const session = response.data.session;
-      window.location.href = session.url; // Redirect to Stripe checkout
+      
+      console.log({ data: response.data });
+      const sessionData = response.data.session;
+      window.location.href = sessionData.url; // Redirect to Stripe checkout
     } catch (error) {
       console.error('Error creating subscription', error);
     }
-  }
+  };
   
   return (
     <motion.div
