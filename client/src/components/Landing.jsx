@@ -36,8 +36,8 @@ const Landing = () => {
 
   const handlePayment = async () => {
     try {
-      const { data: { session } } = await supabase.auth.getSession(); // Get the user's session
-      const userEmail = session.user.email; // Get the logged-in user's email
+      const { data: { session } } = await supabase.auth.getSession(); 
+      const userEmail = session.user.email; 
   
       const response = await axios.post('http://localhost:3000/create-subs', {
         plan_name: '3-mon', 
@@ -55,7 +55,7 @@ const Landing = () => {
 
   const handleAnnualPayment = async () => {
     try {
-      const { data: { session } } = await supabase.auth.getSession(); // Get the user's session
+      const { data: { session } } = await supabase.auth.getSession(); 
       const userEmail = session.user.email; // Get the logged-in user's email
   
       const response = await axios.post('http://localhost:3000/create-subs', {
