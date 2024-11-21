@@ -63,7 +63,7 @@ const Landing = () => {
   };
   
   return (
-    <div className="bg-dark-900 text-dark-50 min-h-screen font-inter">
+    <div className="bg-dark-900 text-dark-50 min-h-screen font-inter text-md">
       {/* Gradient Background Overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-dark-900 via-dark-800 to-dark-700 opacity-75 z-0"></div>
 
@@ -93,7 +93,7 @@ const Landing = () => {
               Login
             </Link>
             <Link 
-              to="/signup" 
+              to="/login" 
               className="px-4 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition-colors"
             >
               Sign Up

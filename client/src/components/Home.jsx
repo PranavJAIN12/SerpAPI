@@ -141,7 +141,9 @@ const Home = () => {
       setLoading(false);
     }
   };
-
+  const handleProdPayment=()=>{
+    
+  }
   return (
     <div className="bg-dark-900 text-gray-100 min-h-screen font-inter antialiased">
       <div className="container mx-auto px-4 py-8">
@@ -266,7 +268,7 @@ const Home = () => {
                         >
                           View Details
                         </a>
-                        <button className="flex-1 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
+                        <button className="flex-1 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"onClick={handleProdPayment}>
                           Buy Now
                         </button>
                       </div>

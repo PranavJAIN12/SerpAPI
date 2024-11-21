@@ -7,6 +7,7 @@ import Success from './pages/success'
 import Fail from './pages/fail'
 
 import Login from './pages/Login'
+import PrivateRoute from './components/PrivateRoute'
 function App() {
   
 
@@ -15,7 +16,7 @@ function App() {
     <>
       <Routes>
         <Route path='/' element={<Landing/>}/>
-        <Route path='/home' element={<Home/>}/>
+        <Route path='/home' element={<PrivateRoute><Home/></PrivateRoute>}/>
         <Route path='/success' element={<Success/>}/>
         <Route path='/fail' element={<Fail/>}/>
         <Route path='/login' element={<Login/>}/>

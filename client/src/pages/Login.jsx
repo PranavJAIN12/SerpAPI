@@ -18,18 +18,26 @@ const Login = () => {
   const handleLogin = async (e) => {
     e.preventDefault();
     setError(null);
-
+  
     const { data, error } = await supabase.auth.signInWithPassword({
       email,
       password,
     });
-
+  
     if (error) {
       setError(error.message);
     } else {
-      window.location.href = '/';
+      
+      const authToken = data?.session?.access_token; 
+      if (authToken) {
+        localStorage.setItem("authToken", authToken); 
+      }
+  
+      console.log("Auth Token:", localStorage.getItem("authToken")); 
+      window.location.href = '/'; 
     }
   };
+  
 
   const handleSignup = async (e) => {
     e.preventDefault();
