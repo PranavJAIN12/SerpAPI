@@ -91,10 +91,6 @@ app.post("/create-subs", async (req, res) => {
 //     console.log(error);
 //   }
 // });
-const getPlanName = (priceId) => {
-  const plan = plans.find((_plan) => _plan.plan_id === priceId);
-  return plan ? plan.plan_name : "Unknown Plan";
-};
 
 
 app.post("/save-payment", async (req, res) => {
@@ -108,7 +104,7 @@ app.post("/save-payment", async (req, res) => {
       const { customer_email } = session;
       const startDate = new Date(subs.start_date * 1000).toISOString();
       const endDate = new Date(subs.current_period_end * 1000).toISOString();
-      const planName = getPlanName(subs.items.data[0].price.id);
+      const planName = subs.items.data[0].price.nickname || subs.items.data[0].price.id;
 
       const { data, error } = await supabase.from('subscriptions').insert([
         {

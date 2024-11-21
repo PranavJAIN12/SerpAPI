@@ -99,7 +99,7 @@
 
 import { useState } from "react";
 import axios from "axios";
-import { Search } from "lucide-react";
+import { Search, Link as LinkIcon } from "lucide-react";
 import { motion } from "framer-motion";
 
 const Home = () => {
@@ -107,7 +107,6 @@ const Home = () => {
   const [result, setResult] = useState([]);
   const [relQues, setRelQues] = useState([]);
   const [loading, setLoading] = useState(false);
-  // const [serInf, setSerInf] = useState([]);
   const [relSer, setRelSer] = useState([]);
   const [shopRes, setShopRes] = useState([]);
 
@@ -117,7 +116,6 @@ const Home = () => {
 
   const fetchData = async () => {
     if (!searchTerm) return;
-    console.log("btn clicked");
     setLoading(true);
 
     try {
@@ -136,217 +134,177 @@ const Home = () => {
       setShopRes(response.data.shopping_results);
       setRelSer(response.data.related_searches);
       setResult(response.data.organic_results || []);
-      // setSerInf(response.data.search_information.total_results);
       setRelQues(response.data.related_questions);
-      console.log(response)
-      console.log(response.data);
     } catch (error) {
       console.error(error);
-      console.error(error.message);
     } finally {
       setLoading(false);
     }
   };
 
   return (
+    <div className="bg-dark-900 text-gray-100 min-h-screen font-inter antialiased">
+      <div className="container mx-auto px-4 py-8">
+        <motion.div 
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          className="max-w-4xl mx-auto"
+        >
+          <header className="text-center mb-12">
+            <h1 className="text-4xl font-black text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-600 mb-4">
+              SerpAPI Product Explorer
+            </h1>
+            <p className="text-xl text-gray-400 max-w-2xl mx-auto">
+              Discover comprehensive product insights with our advanced search tool. Instantly access detailed information directly from Google search results.
+            </p>
+          </header>
 
-    <motion.div className="flex h-screen bg-gray-900 text-gray-100 overflow-auto w-full" initial={{ opacity: 0, y: 20 }}
-    animate={{ opacity: 1, y: 0 }}
-    transition={{ duration: 1 }}>
-      <div>
-        <h1 className="text-gray-100 text-center text-4xl font-semibold m-3">
-          Welcome to SerpAPI Product Search
-        </h1>
-        <h1 className="text-center m-4 mt-8 w-65 pl-5 pr-5 text-gray-300">
-          Discover product details instantly using SerpAPI. This tool allows you
-          to search and explore data fetched directly from Google search
-          results. Simply type a keyword into the search bar and retrieve
-          relevant product information, including categories, ratings, prices,
-          and more.
-          <br />
-        </h1>
+          <div className="flex items-center mb-8">
+            <div className="relative w-full">
+              <input
+                type="text"
+                placeholder="Search products, services, or topics..."
+                className="w-full pl-12 pr-4 py-3 bg-dark-800 border border-dark-700 rounded-xl text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
+                value={searchTerm}
+                onChange={handleSearch}
+              />
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" />
+            </div>
+            <motion.button 
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+              className="ml-4 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
+              onClick={fetchData}
+            >
+              Search
+            </motion.button>
+          </div>
 
-        <div className="flex justify-center mt-8">
-          <input
-            type="text"
-            placeholder="Search here"
-            className="bg-gray-700 text-white placeholder-gray-400 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 border"
-            value={searchTerm}
-            onChange={handleSearch}
-          />
-          <motion.button whileHover={{ scale: 1.1 }}
-            type="button"
-            className="ml-3 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-            onClick={fetchData}
-          >
-            Search
-          </motion.button>
-        </div>
-        <div>
-          <p>About results</p>
-        </div>
+          {loading && (
+            <div className="flex justify-center items-center my-8">
+              <div className="animate-spin rounded-full h-12 w-12 border-t-2 border-b-2 border-blue-500"></div>
+            </div>
+          )}
 
-        <motion.div initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}>
-          <div className="mt-8">
-            {result.length > 0 && (
-              <div className="space-y-4">
-                <h1 className="text-center text-3xl m-4 font-semibold text-gray-100">
-                  Organic Results
-                </h1>
-
+          {/* Organic Results */}
+          {result.length > 0 && (
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Organic Search Results
+              </h2>
+              <div className="space-y-6">
                 {result.map((item, index) => (
-                  <div
+                  <motion.div
                     key={index}
-                    className="bg-gray-900 border-b border-gray-600 py-4 px-6"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="bg-dark-800 rounded-xl p-6 border border-dark-700 hover:shadow-lg transition-all duration-300"
                   >
-                    <div className="flex gap-4">
-                      <img
-                        src={item.favicon}
-                        alt="image"
-                        className="rounded-full h-12 justify-center align-middle"
-                      />
-
+                    <div className="flex items-center mb-3">
+                      {item.favicon && (
+                        <img
+                          src={item.favicon}
+                          alt="favicon"
+                          className="w-8 h-8 mr-4 rounded-full"
+                        />
+                      )}
                       <a
                         href={item.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-blue-600 text-xl hover:underline font-medium"
+                        className="text-xl font-bold text-blue-400 hover:text-blue-300 transition-colors"
                       >
                         {item.title}
                       </a>
                     </div>
-
-                    <p className="text-green-700 text-sm mt-1">
+                    <p className="text-green-500 text-sm mb-2">
                       {item.displayed_link || item.link}
                     </p>
-
-                    <p className="text-gray-200 text-base mt-2">
-                      {item.snippet}
-                    </p>
-                  </div>
+                    <p className="text-gray-400">{item.snippet}</p>
+                  </motion.div>
                 ))}
               </div>
-            )}
-          </div>
+            </section>
+          )}
 
-          <div className="mt-8">
-            {relQues.length > 0 && (
-              <>
-                <h1 className="text-center text-3xl m-4 font-semibold text-gray-100">
-                  Related Questions
-                </h1>
-                {relQues.map((item, index) => (
-                  <div
+          {/* Shopping Results */}
+          {shopRes?.length > 0 && (
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Shopping Results
+              </h2>
+              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                {shopRes.map((item, index) => (
+                  <motion.div
                     key={index}
-                    className="bg-gray-800 rounded-lg p-4 shadow-lg"
+                    initial={{ opacity: 0, scale: 0.9 }}
+                    animate={{ opacity: 1, scale: 1 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="bg-dark-800 rounded-xl overflow-hidden border border-dark-700 hover:shadow-xl transition-all duration-300"
                   >
-                    <p className="text-gray-200 mt-2 text-lg font-medium">
-                      {item.question}
-                    </p>
-                    <a
-                      href={item.link}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="text-blue-500 text-lg font-semibold hover:underline"
-                    >
-                      {item.title}
-                    </a>
-
-                    <p className="text-gray-400 text-sm">
-                      {item.displayed_link || item.link}
-                    </p>
-                  </div>
-                ))}
-              </>
-            )}
-          </div>
-
-          <div className="mt-8">
-            {shopRes?.length > 0 && (
-              <>
-                <h1 className="text-center text-3xl m-4 font-semibold text-gray-100">
-                  Shopping Results
-                </h1>
-                <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
-                  {shopRes.map((item, index) => (
-                    <div
-                      key={index}
-                      className="bg-gray-900 hover:bg-gray-800 rounded-lg p-4 shadow-lg transition-colors duration-300"
-                    >
-                      <div className="flex flex-col items-center w-80 align-middle text-center justify-center">
-                        <img
-                          src={item.thumbnail}
-                          alt="Product image"
-                          className="rounded-lg w-full h-80 object-cover"
-                        />
-                        <p className="text-lg font-semibold text-gray-200 mt-4">
-                          {item.title.slice(0, 40)}...
-                        </p>
-                        <p className="text-xl font-bold text-green-500 mt-2">
-                          {item.price}
-                        </p>
-                        <p className="text-sm text-gray-400 mt-1">
-                          {item.source}
-                        </p>
+                    <img
+                      src={item.thumbnail}
+                      alt="Product"
+                      className="w-full h-64 object-cover"
+                    />
+                    <div className="p-5">
+                      <h3 className="font-bold text-lg mb-2 text-white truncate">
+                        {item.title}
+                      </h3>
+                      <p className="text-green-500 text-xl font-bold mb-2">
+                        {item.price}
+                      </p>
+                      <p className="text-gray-400 text-sm mb-4">{item.source}</p>
+                      <div className="flex space-x-3">
                         <a
                           href={item.link}
                           target="_blank"
                           rel="noopener noreferrer"
-                          className="mt-4 text-blue-500 hover:text-blue-300 font-semibold underline"
+                          className="flex-1 text-center px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
                         >
-                          View Product
+                          View Details
                         </a>
-                        <button
-                          type="button"
-                          className=" mt-4 text-white bg-gradient-to-r from-blue-500 via-blue-600 to-blue-700 hover:bg-gradient-to-br focus:ring-4 focus:outline-none focus:ring-blue-300 dark:focus:ring-blue-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center me-2 mb-2"
-                        >
+                        <button className="flex-1 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors">
                           Buy Now
-                        </button>{" "}
+                        </button>
                       </div>
                     </div>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
+                  </motion.div>
+                ))}
+              </div>
+            </section>
+          )}
 
-          <div className="mt-8">
-            {relSer.length > 0 && (
-              <>
-                <h1 className="text-center text-3xl m-4 font-semibold text-gray-100">
-                  Related Searches
-                </h1>
-
-                <div className="flex justify-center  gap-3">
-                  {relSer.map((item, index) => (
-                    <div
-                      key={index}
-                      className="bg-gray-900 flex hover:bg-gray-800 rounded-lg py-3 px-4 shadow-lg transition-colors duration-300"
-                    >
-                      <Search className="text-gray-500 h-5 w-5 pr-1" />
-                      <a
-                        href={item.link}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="font-semibold text-gray-300 hover:text-blue-500 hover:underline"
-                      >
-                        {item.query}
-                      </a>
-                    </div>
-                  ))}
-                </div>
-              </>
-            )}
-          </div>
-
-          <div className="flex justify-center mt-4">
-            {loading && <p>Loading...</p>}
-          </div>
+          {/* Related Searches */}
+          {relSer.length > 0 && (
+            <section className="mb-12">
+              <h2 className="text-2xl font-bold mb-6 text-center text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Related Searches
+              </h2>
+              <div className="flex flex-wrap justify-center gap-3">
+                {relSer.map((item, index) => (
+                  <motion.a
+                    key={index}
+                    href={item.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="flex items-center bg-dark-800 px-4 py-2 rounded-full text-gray-300 hover:bg-dark-700 hover:text-blue-400 transition-all"
+                  >
+                    <LinkIcon className="mr-2 w-4 h-4" />
+                    {item.query}
+                  </motion.a>
+                ))}
+              </div>
+            </section>
+          )}
         </motion.div>
       </div>
-    </motion.div>
+    </div>
   );
 };
 

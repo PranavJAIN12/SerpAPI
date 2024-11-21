@@ -1,18 +1,17 @@
-/* eslint-disable no-unused-vars */
 import { motion } from "framer-motion";
 import { Link, useNavigate } from "react-router-dom";
-
 import axios from "axios";
 import { useEffect, useState } from "react";
 import { supabase } from "../pages/client";
-
-
-
-  
-
+import { 
+  Search, 
+  Zap, 
+  Award,  
+  CheckCircle, 
+  Rocket 
+} from "lucide-react";
 
 const Landing = () => {
-
   const [loggedIn, setLoggedIn] = useState(false);
   const [username, setUsername] = useState('');
   const navigate = useNavigate();
@@ -20,14 +19,9 @@ const Landing = () => {
   useEffect(() => {
     const checkSession = async () => {
       const { data: { session } } = await supabase.auth.getSession();
-      console.log("Current session:", session);
-
       if (session) {
         setLoggedIn(true);
-        setUsername(session.user.email); // Or any property that holds the username
-        console.log("User is logged in:", session.user);
-      } else {
-        console.log("No active session found.");
+        setUsername(session.user.email);
       }
     };
 
@@ -42,12 +36,10 @@ const Landing = () => {
       const response = await axios.post('http://localhost:3000/create-subs', {
         plan_name: '3-mon', 
         duration: 'month',
-        email: userEmail // Pass user's email to backend
+        email: userEmail
       });
       
-      console.log({ data: response.data });
-      const sessionData = response.data.session;
-      window.location.href = sessionData.url; // Redirect to Stripe checkout
+      window.location.href = response.data.session.url;
     } catch (error) {
       console.error('Error creating subscription', error);
     }
@@ -56,166 +48,207 @@ const Landing = () => {
   const handleAnnualPayment = async () => {
     try {
       const { data: { session } } = await supabase.auth.getSession(); 
-      const userEmail = session.user.email; // Get the logged-in user's email
+      const userEmail = session.user.email;
   
       const response = await axios.post('http://localhost:3000/create-subs', {
         plan_name: 'annual',
         duration: 'year',
-        email: userEmail // Pass user's email to backend
+        email: userEmail
       });
       
-      console.log({ data: response.data });
-      const sessionData = response.data.session;
-      window.location.href = sessionData.url; // Redirect to Stripe checkout
+      window.location.href = response.data.session.url;
     } catch (error) {
       console.error('Error creating subscription', error);
     }
   };
   
   return (
-    <motion.div
-      className="w-full"
-      initial={{ opacity: 0, y: 20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ duration: 1 }}
-    >
-      <div className="min-h-screen bg-gray-900 text-white flex flex-col">
-        {/* Hero Section */}
-        <motion.header
-          className="bg-blue-600 py-16"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="container mx-auto text-center">
-            <h1 className="text-5xl font-bold mb-4">Welcome to AI Product Search</h1>
-            <p className="text-xl mb-8">
-              Discover and compare products instantly using our powerful AI.
-            </p>
-           
-            {loggedIn ? (
-  <p>Welcome, {username}!</p> // Show welcome message
-) : (
-  <Link to="/login">
-    <motion.button className="ml-3 bg-white text-blue-600 py-2 px-6 rounded-full hover:bg-gray-200 transition duration-300" whileHover={{ scale: 1.1 }}>
-      Login to Your Account
-    </motion.button>
-  </Link>
-)}
+    <div className="bg-dark-900 text-dark-50 min-h-screen font-inter">
+      {/* Gradient Background Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-dark-900 via-dark-800 to-dark-700 opacity-75 z-0"></div>
+
+      {/* Navigation */}
+      <nav className="relative z-10 px-6 py-4 flex justify-between items-center">
+        <div className="flex items-center space-x-2">
+          <Rocket className="text-brand-400 w-8 h-8" />
+          <h1 className="text-2xl font-black text-brand-300">IntelliSearch</h1>
+        </div>
+        
+        {loggedIn ? (
+          <div className="flex items-center space-x-4">
+            <span className="text-dark-200">Welcome, {username}</span>
+            <Link 
+              to="/home" 
+              className="px-4 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition-colors"
+            >
+              Go to Dashboard
+            </Link>
           </div>
-        </motion.header>
-
-       
-        <motion.section
-          className="py-20 bg-gray-800"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.8 }}
-        >
-          <div className="container mx-auto">
-            <h2 className="text-4xl font-bold text-center mb-10">Features of the App</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
-              <motion.div
-                className="p-6 bg-gray-700 rounded-lg text-center"
-                initial={{ scale: 0.9 }}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5 }}
-              >
-                <h3 className="text-2xl font-semibold mb-4">Product Search</h3>
-                <p>Search products with detailed results including pricing, ratings, and more.</p>
-              </motion.div>
-              <motion.div
-                className="p-6 bg-gray-700 rounded-lg text-center"
-                initial={{ scale: 0.9 }}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5 }}
-              >
-                <h3 className="text-2xl font-semibold mb-4">Related Questions</h3>
-                <p>Get AI-generated questions and answers for the products you’re interested in.</p>
-              </motion.div>
-              <motion.div
-                className="p-6 bg-gray-700 rounded-lg text-center"
-                initial={{ scale: 0.9 }}
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5 }}
-              >
-                <h3 className="text-2xl font-semibold mb-4">Shopping Results</h3>
-                <p>Explore real-time shopping results fetched directly from Google.</p>
-              </motion.div>
-            </div>
+        ) : (
+          <div className="flex items-center space-x-4">
+            <Link 
+              to="/login" 
+              className="px-4 py-2 border border-dark-700 text-dark-200 rounded-lg hover:bg-dark-700 transition-colors"
+            >
+              Login
+            </Link>
+            <Link 
+              to="/signup" 
+              className="px-4 py-2 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition-colors"
+            >
+              Sign Up
+            </Link>
           </div>
-        </motion.section>
+        )}
+      </nav>
 
-        {/* Payment Cards Section */}
-        <motion.section
-          className="bg-gray-900 py-16"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.6, duration: 0.8 }}
-        >
-          <div className="container mx-auto text-center">
-            <h2 className="text-3xl font-semibold mb-8">Choose Your Plan</h2>
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-6">
-              {/* Free Plan */}
-              <motion.div
-                className="p-6 bg-gray-800 rounded-lg text-center"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5 }}
+      {/* Hero Section */}
+      <motion.header 
+        className="relative z-10 container mx-auto px-6 pt-16 text-center"
+        initial={{ opacity: 0, y: 20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.8 }}
+      >
+        <h1 className="text-5xl md:text-6xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-brand-600">
+          AI-Powered Product Discovery
+        </h1>
+        <p className="text-xl md:text-2xl max-w-3xl mx-auto text-dark-200 mb-10">
+          Revolutionize your shopping experience with intelligent search and comprehensive product insights.
+        </p>
+        
+        <div className="flex justify-center space-x-4">
+          <Link 
+            to="/home" 
+            className="flex items-center px-6 py-3 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition-all group"
+          >
+            <Search className="mr-2 group-hover:animate-pulse" />
+            Start Searching
+          </Link>
+          {!loggedIn && (
+            <Link 
+              to="/signup" 
+              className="flex items-center px-6 py-3 border border-dark-700 text-dark-200 rounded-lg hover:bg-dark-700 transition-colors"
+            >
+              <CheckCircle className="mr-2" />
+              Create Account
+            </Link>
+          )}
+        </div>
+      </motion.header>
+
+      {/* Features Section */}
+      <motion.section 
+        className="relative z-10 container mx-auto px-6 py-16"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.5, duration: 0.8 }}
+      >
+        <h2 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600">
+          Powerful Features
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            { 
+              icon: Search, 
+              title: "Advanced Search", 
+              description: "Comprehensive product search with detailed insights and comparisons."
+            },
+            { 
+              icon: Zap, 
+              title: "AI-Powered Results", 
+              description: "Intelligent analysis and recommendations powered by cutting-edge AI."
+            },
+            { 
+              icon: Award, 
+              title: "Verified Information", 
+              description: "Curated and verified product details from multiple trusted sources."
+            }
+          ].map((feature, index) => (
+            <motion.div
+              key={index}
+              className="bg-dark-800 border border-dark-700 rounded-xl p-6 text-center hover:shadow-lg transition-all"
+              whileHover={{ scale: 1.05 }}
+            >
+              <div className="flex justify-center mb-4">
+                <feature.icon className="w-12 h-12 text-brand-500" />
+              </div>
+              <h3 className="text-xl font-bold mb-3 text-brand-300">{feature.title}</h3>
+              <p className="text-dark-200">{feature.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </motion.section>
+
+      {/* Pricing Section */}
+      <motion.section 
+        className="relative z-10 container mx-auto px-6 py-16"
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ delay: 0.6, duration: 0.8 }}
+      >
+        <h2 className="text-4xl font-bold text-center mb-12 text-transparent bg-clip-text bg-gradient-to-r from-brand-400 to-brand-600">
+          Choose Your Plan
+        </h2>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          {[
+            { 
+              title: "Free", 
+              price: "$0", 
+              description: "Get started with basic features", 
+              action: () => navigate("/home"),
+              features: ["Limited Searches", "Basic Results", "Community Support"]
+            },
+            { 
+              title: "3 Months", 
+              price: "$29", 
+              description: "Premium access for a quarter", 
+              action: handlePayment,
+              features: ["Unlimited Searches", "Advanced Insights", "Priority Support"]
+            },
+            { 
+              title: "Annual", 
+              price: "$99", 
+              description: "Full year of unlimited access", 
+              action: handleAnnualPayment,
+              features: ["All Premium Features", "Unlimited Searches", "Exclusive Updates"]
+            }
+          ].map((plan, index) => (
+            <motion.div
+              key={index}
+              className="bg-dark-800 border border-dark-700 rounded-xl p-6 text-center"
+              whileHover={{ scale: 1.05 }}
+            >
+              <h3 className="text-2xl font-bold mb-3 text-brand-400">{plan.title}</h3>
+              <p className="text-dark-200 mb-4">{plan.description}</p>
+              <div className="text-4xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-brand-600">
+                {plan.price}
+              </div>
+              <ul className="mb-6 space-y-2 text-dark-200">
+                {plan.features.map((feature, idx) => (
+                  <li key={idx} className="flex items-center justify-center">
+                    <CheckCircle className="w-4 h-4 mr-2 text-brand-500" />
+                    {feature}
+                  </li>
+                ))}
+              </ul>
+              <button 
+                onClick={plan.action}
+                className="w-full py-3 bg-brand-600 text-white rounded-lg hover:bg-brand-700 transition-colors"
               >
-                <h3 className="text-2xl font-semibold mb-4">Free</h3>
-                <p className="text-xl mb-6">Get started for free with limited features.</p>
-                <p className="text-4xl font-bold mb-4">$0</p>
-                <Link to="/home">
-                  <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-500 transition duration-300">
-                    Choose Free
-                  </button>
-                </Link>
-              </motion.div>
+                Choose {plan.title}
+              </button>
+            </motion.div>
+          ))}
+        </div>
+      </motion.section>
 
-              {/* 3-Month Plan */}
-              <motion.div
-                className="p-6 bg-gray-800 rounded-lg text-center"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5 }}
-              >
-                <h3 className="text-2xl font-semibold mb-4">3 Months</h3>
-                <p className="text-xl mb-6">Access premium features for 3 months.</p>
-                <p className="text-4xl font-bold mb-4">$29</p>
-                <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-500 transition duration-300" onClick={handlePayment}>
-                    Choose 3mon
-                  </button>
-              </motion.div>
-
-              {/* Annual Plan */}
-              <motion.div
-                className="p-6 bg-gray-800 rounded-lg text-center"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.5 }}
-              >
-                <h3 className="text-2xl font-semibold mb-4">Annual</h3>
-                <p className="text-xl mb-6">Unlock full access for a whole year.</p>
-                <p className="text-4xl font-bold mb-4">$99</p>
-                <button className="bg-blue-600 text-white py-2 px-6 rounded-full hover:bg-blue-500 transition duration-300" onClick={handleAnnualPayment}>
-                  Choose Annual
-                </button>
-              </motion.div>
-            </div>
-          </div>
-        </motion.section>
-
-        {/* Footer */}
-        <motion.footer
-          className="bg-gray-800 py-6"
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-        >
-          <div className="container mx-auto text-center">
-            <p className="text-gray-400">&copy; 2024 AI Product Search. All rights reserved.</p>
-          </div>
-        </motion.footer>
-      </div>
-    </motion.div>
+      {/* Footer */}
+      <footer className="relative z-10 bg-dark-800 py-8 mt-16">
+        <div className="container mx-auto px-6 text-center">
+          <p className="text-dark-300">&copy; 2024 ProductAI. All rights reserved.</p>
+        </div>
+      </footer>
+    </div>
   );
 };
 
