@@ -10,6 +10,7 @@ import Login from './pages/Login'
 function App() {
   
 
+  // document.addEventListener('contextmenu', event => event.preventDefault());
   return (
     <>
       <Routes>
