@@ -99,8 +99,9 @@
 
 import { useState } from "react";
 import axios from "axios";
-import { Search, Link as LinkIcon } from "lucide-react";
+import { Search, Link as LinkIcon, Rocket } from "lucide-react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
@@ -146,6 +147,12 @@ const Home = () => {
   }
   return (
     <div className="bg-dark-900 text-gray-100 min-h-screen font-inter antialiased">
+      <nav className="relative z-10 px-6 py-4 flex justify-between items-center">
+        <div className="flex items-center space-x-2">
+          <Rocket className="text-brand-400 w-8 h-8" />
+          <Link to='/' className="text-2xl font-black text-brand-300">IntelliSearch</Link>
+        </div>
+        </nav>
       <div className="container mx-auto px-4 py-8">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
