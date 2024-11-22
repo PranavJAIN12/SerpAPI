@@ -13,11 +13,12 @@ const supabase = createClient(
   process.env.SUPABASE_KEY
 );
 
-app.use(cors({
-  origin: ["https://intellisearchh.vercel.app/"], 
-  methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
-}));
+app.use(cors());
 // app.use(express.json());
+
+app.get('/', (req,res)=>{
+  res.send("hello world")
+})
 
 const endpointSecret =
   "whsec_5f89a0b9d495c973e42b5e6aafcf3efe52f5e1cc3b31f8d290c351e2ee3fdfa1";
