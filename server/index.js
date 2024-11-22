@@ -13,7 +13,10 @@ const supabase = createClient(
   process.env.SUPABASE_KEY
 );
 
-app.use(cors());
+app.use(cors({
+  origin: [""],
+  methods: ["POST", "GET"]
+}));
 // app.use(express.json());
 
 app.get('/', (req,res)=>{
