@@ -110,7 +110,7 @@ const Landing = () => {
         transition={{ duration: 0.8 }}
       >
         <h1 className="text-5xl md:text-6xl font-black mb-6 text-transparent bg-clip-text bg-gradient-to-r from-brand-300 to-brand-600">
-          AI-Powered Product Discovery
+           Product Search WebApp
         </h1>
         <p className="text-xl md:text-2xl max-w-3xl mx-auto text-dark-200 mb-10">
           Revolutionize your shopping experience with intelligent search and comprehensive product insights.
