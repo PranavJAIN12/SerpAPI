@@ -13,14 +13,11 @@ const supabase = createClient(
   process.env.SUPABASE_KEY
 );
 
-app.use(cors({
-  origin: [""],
-  methods: ["POST", "GET"]
-}));
+app.use(cors());
 // app.use(express.json());
 
 app.get('/', (req,res)=>{
-  res.send("hello world")
+  res.send("hello")
 })
 
 const endpointSecret =
@@ -82,6 +79,38 @@ app.post("/create-subs", async (req, res) => {
     return res.status(500).json({ error: "Something went wrong" });
   }
 });
+
+app.post("/prod-payment", async(req,res)=>{
+  const{title,price} = req.body
+  try {
+    const session = await stripe.checkout.sessions.create({
+      
+      payment_method_types: ["card"],
+      line_items: [
+        {
+          price_data: {
+            currency: 'usd', 
+            product_data: {
+              name: title,
+            },
+            unit_amount: Math.round(parseFloat(price.replace(/[^0-9.-]+/g, '')) * 100), 
+          },
+          quantity: 1,
+        },
+      ],
+      mode:'payment',
+      success_url: `http://localhost:5173/success?session_id={CHECKOUT_SESSION_ID}`,
+      cancel_url: "http://localhost:5173/fail",
+      // customer_email: email, 
+    });
+
+    return res.status(200).json({ session });
+  } catch (error) {
+    console.error(error);
+    console.log("error creating product payment")
+    return res.status(500).json({ error: "Something went wrong" });
+  }
+})
 
 // app.post("/save-payment", async (req, res) => {
 //   const { session_id } = req.body;

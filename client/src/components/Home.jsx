@@ -143,19 +143,31 @@ const Home = () => {
       setLoading(false);
     }
   };
-  const handleProdPayment=()=>{
-    
-  }
+  const handleProdPayment = async (productDetails) => {
+    try {
+      const response = await axios.post('http://localhost:3000/prod-payment', productDetails);
+      const { session } = response.data;
+  
+      if (session && session.url) {
+        window.location.href = session.url; 
+      }
+    } catch (error) {
+      console.error('Error initiating payment:', error);
+    }
+  };
+  
   return (
     <div className="bg-dark-900 text-gray-100 min-h-screen font-inter antialiased">
       <nav className="relative z-10 px-6 py-4 flex justify-between items-center">
         <div className="flex items-center space-x-2">
           <Rocket className="text-brand-400 w-8 h-8" />
-          <Link to='/' className="text-2xl font-black text-brand-300">IntelliSearch</Link>
+          <Link to="/" className="text-2xl font-black text-brand-300">
+            IntelliSearch
+          </Link>
         </div>
-        </nav>
+      </nav>
       <div className="container mx-auto px-4 py-8">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -166,7 +178,9 @@ const Home = () => {
               SerpAPI Product Explorer
             </h1>
             <p className="text-xl text-gray-400 max-w-2xl mx-auto">
-              Discover comprehensive product insights with our advanced search tool. Instantly access detailed information directly from Google search results.
+              Discover comprehensive product insights with our advanced search
+              tool. Instantly access detailed information directly from Google
+              search results.
             </p>
           </header>
 
@@ -181,7 +195,7 @@ const Home = () => {
               />
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" />
             </div>
-            <motion.button 
+            <motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="ml-4 px-6 py-3 bg-gradient-to-r from-blue-600 to-purple-600 text-white rounded-xl font-bold hover:from-blue-700 hover:to-purple-700 transition-all duration-300"
@@ -266,7 +280,9 @@ const Home = () => {
                       <p className="text-green-500 text-xl font-bold mb-2">
                         {item.price}
                       </p>
-                      <p className="text-gray-400 text-sm mb-4">{item.source}</p>
+                      <p className="text-gray-400 text-sm mb-4">
+                        {item.source}
+                      </p>
                       <div className="flex space-x-3">
                         <a
                           href={item.link}
@@ -276,7 +292,15 @@ const Home = () => {
                         >
                           View Details
                         </a>
-                        <button className="flex-1 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"onClick={handleProdPayment}>
+                        <button
+                          className="flex-1 px-4 py-2 bg-purple-600 text-white rounded-lg hover:bg-purple-700 transition-colors"
+                          onClick={() =>
+                            handleProdPayment({
+                              title: item.title,
+                              price: item.price,
+                            })
+                          }
+                        >
                           Buy Now
                         </button>
                       </div>
