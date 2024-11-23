@@ -1,116 +1,22 @@
-/* eslint-disable no-unused-vars */
-// import { useState } from "react";
-// import axios from "axios";
-
-// const Home = () => {
-//   const [searchTerm, setSearchTerm] = useState("");
-//   const [result, setResult] = useState([]);
-//   const [loading, setLoading] = useState(false);
-
-//   const handleSearch = (e) => {
-//     setSearchTerm(e.target.value);
-//   };
-
-//   const fetchData = async () => {
-//     if (!searchTerm) return;
-//     console.log("btn clicked");
-//     setLoading(true);
-
-//     try {
-//       const response = await axios.get("https://hook.us2.make.com/qfn7qbhmeyfg73pg0ohxrg4xgdtokqhf", {
-//         params: {
-//           engine: "google",
-//           q: searchTerm,
-//           api_key: "177e05c2db3e213b4f0f367a6272a253d13972eb9c6eb539bd776d447a5b449d",
-//         },
-//       });
-//       setResult(response.data.immersive_products);
-//       // console.log("before", response)
-//       console.log(response.data.immersive_products);
-//     } catch (error) {
-
-//       console.error(error.message);
-//     } finally {
-//       setLoading(false);
-//     }
-//   };
-
-//   return (
-//     <div className="flex h-screen bg-gray-900 text-gray-100 overflow-hidden">
-//       <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 opacity-80">
-//         <h1 className="text-gray-100 text-center text-4xl font-semibold m-3">
-//           SerpAPI GoogleSearch
-//         </h1>
-
-//         <div className="flex justify-center mt-8">
-//           <input
-//             type="text"
-//             placeholder="Search here"
-//             className="bg-gray-700 text-white placeholder-gray-400 rounded-lg pl-10 pr-4 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 border"
-//             value={searchTerm}
-//             onChange={handleSearch}
-//           />
-//           <button
-//             type="button"
-//             className="ml-3 text-white bg-blue-700 hover:bg-blue-800 focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-5 py-2.5 text-center me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-//             onClick={fetchData}
-//           >
-//             Search
-//           </button>
-//         </div>
-//         <div>
-//         <table className="w-full min-w-full divide-y divide-gray-700">
-//             <thead>
-//               <tr>
-//                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Category</th>
-//                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Source</th>
-//                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Title</th>
-//                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Rating</th>
-//                 <th className="px-6 py-3 text-left text-xs font-medium text-gray-400 uppercase tracking-wider">Reviews</th>
-//                 <th className="px-6 py-3 text-xs font-medium text-gray-400 uppercase tracking-wider text-center">Price</th>
-//                 <th className="px-6 py-3 text-xs font-medium text-gray-400 uppercase tracking-wider text-center">Thumbnail</th>
-//               </tr>
-//             </thead>
-//             <tbody className="divide-y divide-gray-700">
-//               {result.map((element, index) => (
-//                 <tr key={index}>
-//                   <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-100">{element.category}</td>
-//                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{element.source}</td>
-//                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{element.title}</td>
-//                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{element.rating}</td>
-//                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">{element.reviews}</td>
-//                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">${element.price}</td>
-//                   <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-300">
-//                     <img src={element.thumbnail} alt={element.title} className="w-20 h-20 object-cover"/>
-//                   </td>
-//                 </tr>
-//               ))}
-//             </tbody>
-//           </table>
-//         </div>
-
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Home;
-
 //add per month subs based for payment method... and lock some features to get only on payment gateway....
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import axios from "axios";
-import { Search, Link as LinkIcon, Rocket } from "lucide-react";
+import { Search, Link as LinkIcon, Rocket, Mic } from "lucide-react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 
 const Home = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [result, setResult] = useState([]);
+  // eslint-disable-next-line no-unused-vars
   const [relQues, setRelQues] = useState([]);
   const [loading, setLoading] = useState(false);
   const [relSer, setRelSer] = useState([]);
   const [shopRes, setShopRes] = useState([]);
+  const [transcript, setTranscript] = useState("");
+  const [isRecognizing, setIsRecognizing] = useState(false);
+  let recognition;
 
   const handleSearch = (e) => {
     setSearchTerm(e.target.value);
@@ -145,17 +51,64 @@ const Home = () => {
   };
   const handleProdPayment = async (productDetails) => {
     try {
-      const response = await axios.post('http://localhost:3000/prod-payment', productDetails);
+      const response = await axios.post(
+        "http://localhost:3000/prod-payment",
+        productDetails
+      );
       const { session } = response.data;
-  
+
       if (session && session.url) {
-        window.location.href = session.url; 
+        window.location.href = session.url;
       }
     } catch (error) {
-      console.error('Error initiating payment:', error);
+      console.error("Error initiating payment:", error);
     }
   };
-  
+
+  useEffect(() => {
+    if (window.SpeechRecognition || window.webkitSpeechRecognition) {
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+      recognition = new (window.SpeechRecognition ||
+        window.webkitSpeechRecognition)();
+      recognition.lang = "en-US";
+
+      recognition.onresult = (event) => {
+        const newTranscript = event.results[0][0].transcript;
+        setTranscript(newTranscript); 
+        console.log("Transcript:", newTranscript);
+        recognition.stop(); 
+        setIsRecognizing(false); 
+      };
+
+      recognition.onerror = (event) => {
+        console.error("Speech Recognition Error:", event.error);
+        recognition.stop(); 
+        setIsRecognizing(false);
+      };
+    } else {
+      console.warn("Speech Recognition API is not supported in this browser.");
+    }
+  }, []); 
+  useEffect(()=>{
+    if (!isRecognizing && transcript) {
+      setSearchTerm(transcript);
+    }
+  }, [isRecognizing, transcript])
+
+  const handleMic = () => {
+    if (recognition) {
+      if (!isRecognizing) {
+        recognition.start();
+        setIsRecognizing(true); 
+        console.log("Recognition started");
+      } else {
+        console.log("Recognition is already active");
+      }
+    } else {
+      alert("Speech Recognition is not supported in this browser.");
+    }
+  };
+
   return (
     <div className="bg-dark-900 text-gray-100 min-h-screen font-inter antialiased">
       <nav className="relative z-10 px-6 py-4 flex justify-between items-center">
@@ -183,6 +136,7 @@ const Home = () => {
               search results.
             </p>
           </header>
+          
 
           <div className="flex items-center mb-8">
             <div className="relative w-full">
@@ -190,10 +144,16 @@ const Home = () => {
                 type="text"
                 placeholder="Search products, services, or topics..."
                 className="w-full pl-12 pr-4 py-3 bg-dark-800 border border-dark-700 rounded-xl text-white placeholder-gray-500 focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-300"
-                value={searchTerm}
+                value = {isRecognizing ? transcript : searchTerm}
+                // value={transcript}
                 onChange={handleSearch}
               />
+             
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-500" />
+              <Mic
+                className="absolute right-4 top-1/4 text-gray-500 cursor-pointer"
+                onClick={handleMic}
+              />
             </div>
             <motion.button
               whileHover={{ scale: 1.05 }}
