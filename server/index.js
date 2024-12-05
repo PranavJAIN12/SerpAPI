@@ -266,3 +266,5 @@ app.listen(port, () => {
 // console.log('SUPABASE_URL:', process.env.SUPABASE_URL);
 // console.log('SUPABASE_KEY:', process.env.SUPABASE_KEY);
 // console.log('STRIPE_WEBHOOK_SECRET:', process.env.STRIPE_WEBHOOK_SECRET);
+
+//https://test2-zeta-swart.vercel.app/

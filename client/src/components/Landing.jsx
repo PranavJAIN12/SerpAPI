@@ -33,7 +33,7 @@ const Landing = () => {
       const { data: { session } } = await supabase.auth.getSession(); 
       const userEmail = session.user.email; 
   
-      const response = await axios.post('http://localhost:3000/create-subs', {
+      const response = await axios.post('https://intellisearch-backend.vercel.app/create-subs', {
         plan_name: '3-mon', 
         duration: 'month',
         email: userEmail
@@ -50,7 +50,7 @@ const Landing = () => {
       const { data: { session } } = await supabase.auth.getSession(); 
       const userEmail = session.user.email;
   
-      const response = await axios.post('http://localhost:3000/create-subs', {
+      const response = await axios.post('https://intellisearch-backend.vercel.app/create-subs', {
         plan_name: 'annual',
         duration: 'year',
         email: userEmail

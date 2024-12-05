@@ -52,7 +52,7 @@ const Home = () => {
   const handleProdPayment = async (productDetails) => {
     try {
       const response = await axios.post(
-        "http://localhost:3000/prod-payment",
+        "https://intellisearch-backend.vercel.app/prod-payment",
         productDetails
       );
       const { session } = response.data;
