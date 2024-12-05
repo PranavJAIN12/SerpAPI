@@ -12,8 +12,12 @@ const supabase = createClient(
   process.env.SUPABASE_URL,
   process.env.SUPABASE_KEY
 );
-
-app.use(cors());
+const corsConfig = {
+  origin: "*",
+  credential: true,
+  methods: ["GET", "POST", "PUT", "DELETE", ]
+}
+app.use(cors(corsConfig));
 // app.use(express.json());
 
 app.get('/', (req,res)=>{
@@ -257,3 +261,7 @@ app.post("/webhook", (request, response) => {
 app.listen(port, () => {
   console.log(`Server listening on port ${port}`);
 });
+// console.log('STRIPE_SECRET_KEY:', process.env.STRIPE_SECRET_KEY);
+// console.log('SUPABASE_URL:', process.env.SUPABASE_URL);
+// console.log('SUPABASE_KEY:', process.env.SUPABASE_KEY);
+// console.log('STRIPE_WEBHOOK_SECRET:', process.env.STRIPE_WEBHOOK_SECRET);
