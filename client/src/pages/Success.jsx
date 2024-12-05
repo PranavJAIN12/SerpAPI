@@ -26,6 +26,7 @@ const Success = () => {
     if(sessionId){
       savePayment()
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [sessionId])
   return (
     <motion.div
