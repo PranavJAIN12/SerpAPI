@@ -1,33 +1,32 @@
-
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import axios from "axios";
 import { useEffect } from "react";
 
 const Success = () => {
-
-  const queryParams = new URLSearchParams(location.search);
+  const location = useLocation();  // Get the location object using useLocation
+  const queryParams = new URLSearchParams(location.search);  // Get search params from location
   const sessionId = queryParams.get("session_id");
 
-  const savePayment = async ()=>{
+  const savePayment = async () => {
     const response = await axios({
-      method:"POST",
-      url:'https://intellisearch-backend.vercel.app/save-payment',
-      data:{session_id:sessionId},
-      headers:{
-        "Content-Type":"application/json",
-
+      method: "POST",
+      url: "https://intellisearch-backend.vercel.app/save-payment",
+      data: { session_id: sessionId },
+      headers: {
+        "Content-Type": "application/json",
       },
     });
-    console.log({data: response.data})
-  }
+    console.log({ data: response.data });
+  };
 
-  useEffect(()=>{
-    if(sessionId){
-      savePayment()
+  useEffect(() => {
+    if (sessionId) {
+      savePayment();
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [sessionId])
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [sessionId]);
+
   return (
     <motion.div
       className="min-h-screen flex flex-col items-center justify-center bg-gray-900 text-white"
