@@ -12,7 +12,7 @@ const Success = () => {
   const savePayment = async ()=>{
     const response = await axios({
       method:"POST",
-      url:'http://localhost:3000/save-payment',
+      url:'https://intellisearch-backend.vercel.app/save-payment',
       data:{session_id:sessionId},
       headers:{
         "Content-Type":"application/json",
